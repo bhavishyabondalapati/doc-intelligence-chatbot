@@ -1,0 +1,17 @@
+cat > .gitignore << 'EOF'
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Personal documents and anything derived from them - don't publish
+# these publicly. Keep the folders (via .gitkeep) so the structure is
+# visible, but not the actual content.
+data/raw_pdfs/*
+!data/raw_pdfs/.gitkeep
+data/processed/*.json
+data/chunks/*.json
+data/index/
+EOF
+cat .gitignore

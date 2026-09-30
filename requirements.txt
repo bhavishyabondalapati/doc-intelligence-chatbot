@@ -1,0 +1,9 @@
+PyMuPDF
+pytesseract
+pdf2image
+Pillow
+sentence-transformers
+faiss-cpu
+numpy
+google-genai
+python-dotenv

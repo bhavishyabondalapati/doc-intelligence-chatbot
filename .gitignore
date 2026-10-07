@@ -10,3 +10,8 @@ data/raw_pdfs/*
 data/processed/*.json
 data/chunks/*.json
 data/index/
+
+# Build / eval artifacts
+*.egg-info/
+eval/.cache/
+eval/corpus_fresh/

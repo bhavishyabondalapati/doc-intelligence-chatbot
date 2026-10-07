@@ -1,0 +1,592 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the recommended starting dose of Lipitor for adults?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "10 or 20 mg once daily (range 10-80 mg once daily).",
+    "evidence": [
+      "starting dosage is 10 or 20 mg once daily"
+    ]
+  },
+  {
+    "id": "q02",
+    "question": "What strengths do Lipitor tablets come in?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "10 mg, 20 mg, 40 mg and 80 mg.",
+    "evidence": [
+      "Tablets: 10 mg; 20 mg; 40 mg; 80 mg of atorvastatin"
+    ]
+  },
+  {
+    "id": "q03",
+    "question": "Who should not take Lipitor because of liver problems?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "Patients with acute liver failure or decompensated cirrhosis.",
+    "evidence": [
+      "Acute liver failure or decompensated cirrhosis"
+    ]
+  },
+  {
+    "id": "q04",
+    "question": "What are the most common side effects of atorvastatin?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "Nasopharyngitis, arthralgia, diarrhea, pain in extremity, urinary tract infection (>=5%).",
+    "evidence": [
+      "nasopharyngitis, arthralgia, diarrhea, pain in extremity"
+    ]
+  },
+  {
+    "id": "q05",
+    "question": "Is it okay to drink a lot of grapefruit juice while on my cholesterol pill Lipitor?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "No - more than 1.2 liters of grapefruit juice daily is not recommended.",
+    "evidence": [
+      "more than 1.2 liters daily, of grapefruit juice is not recommended",
+      "drink large amounts of grapefruit juice"
+    ]
+  },
+  {
+    "id": "q06",
+    "question": "What is the plasma elimination half-life of atorvastatin?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "About 14 hours (20-30 hours for HMG-CoA reductase inhibitory activity).",
+    "evidence": [
+      "elimination half-life of LIPITOR in humans is approximately 14 hours"
+    ]
+  },
+  {
+    "id": "q07",
+    "question": "At what temperature should Lipitor tablets be stored?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "Controlled room temperature, 20-25 C (68-77 F).",
+    "evidence": [
+      "Store at controlled room temperature 20-25",
+      "Store LIPITOR at room temperature between 68°F to 77°F"
+    ]
+  },
+  {
+    "id": "q08",
+    "question": "Can I breastfeed while taking Lipitor?",
+    "answerable": true,
+    "source_file": "lipitor_atorvastatin.pdf",
+    "answer": "Breastfeeding is not recommended during treatment.",
+    "evidence": [
+      "Breastfeeding not recommended during treatment with LIPITOR",
+      "breastfeeding is not recommended during treatment with LIPITOR",
+      "decide if you will take LIPITOR or breastfeed. You should not do both"
+    ]
+  },
+  {
+    "id": "q09",
+    "question": "What is the starting dose of Zoloft for major depressive disorder?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "50 mg per day (max 200 mg per day).",
+    "evidence": [
+      "MDD (2.1) 50 mg per day 200 mg per day",
+      "Adults MDD 50 mg 50-200 mg"
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "How long after stopping an MAOI must I wait before starting sertraline?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "14 days.",
+    "evidence": [
+      "within 14 days of stopping MAOIs",
+      "within 14 days of stopping, MAOIs",
+      "At least 14 days must elapse between discontinuation of a monoamine oxidase inhibitor",
+      "have stopped taking an MAOI in the last 2 weeks"
+    ]
+  },
+  {
+    "id": "q11",
+    "question": "Which antipsychotic drug must not be taken together with Zoloft?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "Pimozide.",
+    "evidence": [
+      "Concomitant use of pimozide",
+      "Taking pimozide",
+      "take the antipsychotic medicine pimozide",
+      "Pimozide is contraindicated for use with sertraline"
+    ]
+  },
+  {
+    "id": "q12",
+    "question": "How much alcohol is in Zoloft oral solution?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "12% alcohol (20 mg sertraline per mL).",
+    "evidence": [
+      "20 mg of sertraline per mL and 12% alcohol",
+      "Contains 12% alcohol"
+    ]
+  },
+  {
+    "id": "q13",
+    "question": "What liquids can Zoloft oral solution be mixed with?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "4 ounces of water, ginger ale, lemon/lime soda, lemonade or orange juice only.",
+    "evidence": [
+      "water, ginger ale, lemon/lime soda, lemonade or orange juice ONLY"
+    ]
+  },
+  {
+    "id": "q14",
+    "question": "What is the average terminal elimination half-life of sertraline?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "About 26 hours.",
+    "evidence": [
+      "terminal elimination half-life of plasma sertraline is about 26 hours"
+    ]
+  },
+  {
+    "id": "q15",
+    "question": "What is the starting dose of Zoloft for OCD in children aged 6 to 12?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "25 mg per day.",
+    "evidence": [
+      "25 mg per day (ages 6-12)",
+      "Pediatric Patients OCD (ages 6-12 years old) 25 mg",
+      "25 mg/day (pediatric patients ages 6-12)"
+    ]
+  },
+  {
+    "id": "q16",
+    "question": "Does Zoloft affect the heart's QT interval?",
+    "answerable": true,
+    "source_file": "zoloft_sertraline.pdf",
+    "answer": "Use with caution in patients with risk factors for QTc prolongation.",
+    "evidence": [
+      "caution in patients with risk factors for QTc prolongation",
+      "The risk of QTc prolongation and/or ventricular arrhythmias"
+    ]
+  },
+  {
+    "id": "q17",
+    "question": "What is the boxed warning on Zestril?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "Fetal toxicity: discontinue as soon as possible when pregnancy is detected.",
+    "evidence": [
+      "When pregnancy is detected, discontinue Zestril as soon as possible"
+    ]
+  },
+  {
+    "id": "q18",
+    "question": "What is the initial dose of lisinopril for heart failure?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "5 mg once daily, increased as tolerated to 40 mg daily.",
+    "evidence": [
+      "Heart Failure: Initiate with 5 mg once daily",
+      "adjunctive therapy for systolic heart failure, is 5 mg once daily"
+    ]
+  },
+  {
+    "id": "q19",
+    "question": "How is lisinopril dosed after an acute heart attack?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "5 mg within 24 hours of MI, 5 mg after 24 hours, then 10 mg once daily.",
+    "evidence": [
+      "Give 5 mg within 24 hours of MI",
+      "Zestril 5 mg orally, followed by 5 mg after 24 hours, 10 mg after 48 hours"
+    ]
+  },
+  {
+    "id": "q20",
+    "question": "How long must I wait between sacubitril/valsartan and Zestril?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "36 hours.",
+    "evidence": [
+      "within 36 hours of switching to or from sacubitril/valsartan"
+    ]
+  },
+  {
+    "id": "q21",
+    "question": "What is the initial lisinopril dose for patients on hemodialysis?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "2.5 mg.",
+    "evidence": [
+      "on hemodialysis, the recommended initial dose is 2.5 mg",
+      "For patients on hemodialysis or creatinine clearance < 10 mL/min, the recommended initial dose is 2.5 mg"
+    ]
+  },
+  {
+    "id": "q22",
+    "question": "What are the common side effects of Zestril in patients with high blood pressure?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "Headache, dizziness and cough.",
+    "evidence": [
+      "Hypertension: headache, dizziness and cough",
+      "observed with Zestril alone: headache (by 3.8%), dizziness (by 3.5%), cough"
+    ]
+  },
+  {
+    "id": "q23",
+    "question": "What is the starting dose of Zestril for children 6 years and older?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "0.07 mg/kg (up to 5 mg) once daily.",
+    "evidence": [
+      "0.07 mg per kg (up to 5 mg total) once daily",
+      "the recommended starting dose is 0.07 mg per kg once daily (up to 5 mg total)"
+    ]
+  },
+  {
+    "id": "q24",
+    "question": "What happens if lisinopril is taken together with lithium?",
+    "answerable": true,
+    "source_file": "zestril_lisinopril.pdf",
+    "answer": "Symptoms of lithium toxicity can occur.",
+    "evidence": [
+      "Lithium: Symptoms of lithium toxicity",
+      "Lithium toxicity has been reported in patients receiving lithium concomitantly",
+      "Lithium toxicity was usually reversible upon discontinuation of lithium and the ACE inhibitor"
+    ]
+  },
+  {
+    "id": "q25",
+    "question": "What is the boxed warning for Jantoven?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "Bleeding risk - warfarin can cause major or fatal bleeding.",
+    "evidence": [
+      "Warfarin Sodium can cause major or fatal bleeding"
+    ]
+  },
+  {
+    "id": "q26",
+    "question": "What target INR should be used for warfarin in non-valvular atrial fibrillation?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "INR 2.5 (range 2.0 to 3.0).",
+    "evidence": [
+      "non-valvular AF, anticoagulate with warfarin to target INR of 2.5"
+    ]
+  },
+  {
+    "id": "q27",
+    "question": "What initial warfarin dose is recommended when the patient's genotype is unknown?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "Usually 2 to 5 mg once daily.",
+    "evidence": [
+      "the initial dose of JANTOVEN is usually 2 to 5 mg once daily"
+    ]
+  },
+  {
+    "id": "q28",
+    "question": "What color is the 5 mg Jantoven tablet?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "Peach.",
+    "evidence": [
+      "5 mg peach",
+      "5 mg – Compressed tablet, peach"
+    ]
+  },
+  {
+    "id": "q29",
+    "question": "Can pregnant women take warfarin?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "Contraindicated in pregnancy, except in women with mechanical heart valves.",
+    "evidence": [
+      "Pregnancy, except in women with mechanical heart valves",
+      "contraindicated in women who are pregnant except in pregnant women with mechanical heart valves",
+      "Avoid JANTOVEN during pregnancy except in pregnant women with mechanical heart valves",
+      "you are pregnant unless you have a mechanical heart valve"
+    ]
+  },
+  {
+    "id": "q30",
+    "question": "What is the effective half-life of warfarin?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "20 to 60 hours, mean about 40 hours.",
+    "evidence": [
+      "effective half-life ranges from 20 to 60 hours"
+    ]
+  },
+  {
+    "id": "q31",
+    "question": "Which herbal supplements can weaken the effect of Jantoven?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "Co-enzyme Q10, St. John's wort, ginseng.",
+    "evidence": [
+      "some botanicals may decrease the effects of JANTOVEN"
+    ]
+  },
+  {
+    "id": "q32",
+    "question": "Why should people on warfarin keep their diet consistent?",
+    "answerable": true,
+    "source_file": "jantoven_warfarin.pdf",
+    "answer": "The amount of vitamin K in food affects therapy.",
+    "evidence": [
+      "The amount of vitamin K in food may affect therapy with JANTOVEN",
+      "Eat a normal, balanced diet to maintain a consistent intake of vitamin K"
+    ]
+  },
+  {
+    "id": "q33",
+    "question": "What is the boxed warning on metformin?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "Lactic acidosis (postmarketing cases have resulted in death).",
+    "evidence": [
+      "metformin-associated lactic acidosis have resulted in death"
+    ]
+  },
+  {
+    "id": "q34",
+    "question": "Below what kidney function (eGFR) should metformin not be used?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "eGFR below 30 mL/minute/1.73 m2.",
+    "evidence": [
+      "Do not use in patients with eGFR below 30",
+      "contraindicated in patients with an eGFR less than 30",
+      "patients with an estimated glomerular filtration rate (eGFR) below 30"
+    ]
+  },
+  {
+    "id": "q35",
+    "question": "What is the adult starting dose of immediate-release metformin?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "500 mg twice a day or 850 mg once a day, with meals.",
+    "evidence": [
+      "Starting dose: 500 mg orally twice a day or 850 mg once a day",
+      "The recommended starting dose of metformin hydrochloride tablets is 500 mg orally twice a day or 850 mg once a day"
+    ]
+  },
+  {
+    "id": "q36",
+    "question": "What is the maximum daily dose of immediate-release metformin for adults?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "2,550 mg per day in divided doses.",
+    "evidence": [
+      "maximum dose of 2,550 mg per day"
+    ]
+  },
+  {
+    "id": "q37",
+    "question": "What is the maximum dose of metformin extended-release, and when is it taken?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "2,000 mg once daily with the evening meal.",
+    "evidence": [
+      "maximum dosage of 2,000 mg once daily with the evening meal",
+      "up to a maximum of 2,000 mg once daily with the evening meal"
+    ]
+  },
+  {
+    "id": "q38",
+    "question": "Should metformin be stopped before a CT scan with contrast dye?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "It may need to be stopped at the time of, or before, iodinated contrast imaging.",
+    "evidence": [
+      "discontinued at time of, or prior to, iodinated contrast imaging procedures",
+      "at the time of, or prior to, an iodinated contrast imaging procedure",
+      "injection of dye or contrast agents for an x-ray procedure"
+    ]
+  },
+  {
+    "id": "q39",
+    "question": "What are the most common side effects of metformin?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "Diarrhea, nausea/vomiting, flatulence, asthenia, indigestion, abdominal discomfort, headache.",
+    "evidence": [
+      "diarrhea, nausea/vomiting, flatulence, asthenia, indigestion",
+      "Common side effects of metformin hydrochloride tablets and metformin hydrochloride extended-release tablets include diarrhea, nausea, and upset stomach"
+    ]
+  },
+  {
+    "id": "q40",
+    "question": "From what age can children take metformin for type 2 diabetes?",
+    "answerable": true,
+    "source_file": "metformin_laurus.pdf",
+    "answer": "10 years of age and older.",
+    "evidence": [
+      "pediatric patients 10 years of age and older with type 2 diabetes",
+      "have not been studied in children younger than 10 years old"
+    ]
+  },
+  {
+    "id": "q41",
+    "question": "When was amoxicillin first approved in the U.S.?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "1974.",
+    "evidence": [
+      "Initial U.S. Approval: 1974"
+    ]
+  },
+  {
+    "id": "q42",
+    "question": "What is the usual adult daily dose range of amoxicillin?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "750 to 1750 mg/day in divided doses every 8 to 12 hours.",
+    "evidence": [
+      "In Adults, 750 to 1750 mg/day in divided doses every 8 to 12 hours"
+    ]
+  },
+  {
+    "id": "q43",
+    "question": "What is the triple therapy regimen with amoxicillin for H. pylori?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "1 g amoxicillin + 500 mg clarithromycin + 30 mg lansoprazole, twice daily for 14 days.",
+    "evidence": [
+      "1 gram amoxicillin, 500 mg clarithromycin, and 30 mg lansoprazole"
+    ]
+  },
+  {
+    "id": "q44",
+    "question": "Who should not take amoxicillin?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "People with a serious hypersensitivity reaction to amoxicillin or other beta-lactams.",
+    "evidence": [
+      "History of a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens-Johnson syndrome) to amoxicillin"
+    ]
+  },
+  {
+    "id": "q45",
+    "question": "What warning about enterocolitis was added to the amoxicillin label?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "Drug-induced enterocolitis syndrome (DIES) has been reported; discontinue if it occurs.",
+    "evidence": [
+      "Drug-induced enterocolitis syndrome (DIES) has been reported with amoxicillin use",
+      "Warnings and Precautions, Drug-Induced Enterocolitis Syndrome (DIES)"
+    ]
+  },
+  {
+    "id": "q46",
+    "question": "What is the maximum amoxicillin dose for infants 3 months or younger?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "30 mg/kg/day divided every 12 hours.",
+    "evidence": [
+      "upper dose for neonates and infants aged 3 months or younger is 30 mg/kg/day",
+      "recommended upper dose of amoxicillin is 30 mg/kg/day"
+    ]
+  },
+  {
+    "id": "q47",
+    "question": "What should be done if diarrhea occurs while taking amoxicillin?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "Evaluate for C. difficile-associated diarrhea (CDAD).",
+    "evidence": [
+      "(ranging from mild diarrhea to fatal colitis): Evaluate if diarrhea occurs"
+    ]
+  },
+  {
+    "id": "q48",
+    "question": "What is the amoxicillin dose range for children older than 3 months?",
+    "answerable": true,
+    "source_file": "amoxicillin_capsule_SCANNED.pdf",
+    "answer": "20 to 45 mg/kg/day in divided doses every 8 to 12 hours.",
+    "evidence": [
+      "In Pediatric Patients over 3 Months of Age, 20 to 45 mg/kg/day",
+      "Recommended Dosage for Pediatric Patients Aged 3 Months and Older and Weight Less than 40 kg"
+    ]
+  },
+  {
+    "id": "q49",
+    "question": "What is the recommended adult dose of insulin glargine?",
+    "answerable": false,
+    "why_unanswerable": "drug not in corpus"
+  },
+  {
+    "id": "q50",
+    "question": "What is the recommended dose of omeprazole for heartburn?",
+    "answerable": false,
+    "why_unanswerable": "near miss: omeprazole only appears as an interacting drug in the warfarin label"
+  },
+  {
+    "id": "q51",
+    "question": "What is the half-life of ibuprofen?",
+    "answerable": false,
+    "why_unanswerable": "near miss: ibuprofen only appears as an interacting drug"
+  },
+  {
+    "id": "q52",
+    "question": "How much does a 90-day supply of Lipitor cost at a pharmacy?",
+    "answerable": false,
+    "why_unanswerable": "prices are not in drug labels"
+  },
+  {
+    "id": "q53",
+    "question": "Which pharmacy sells Jantoven at the lowest price?",
+    "answerable": false,
+    "why_unanswerable": "prices are not in drug labels"
+  },
+  {
+    "id": "q54",
+    "question": "Who discovered sertraline, and in what year?",
+    "answerable": false,
+    "why_unanswerable": "history not in label"
+  },
+  {
+    "id": "q55",
+    "question": "Can amoxicillin capsules be used to treat Lyme disease?",
+    "answerable": false,
+    "why_unanswerable": "Lyme disease not mentioned"
+  },
+  {
+    "id": "q56",
+    "question": "Is metformin approved for treating polycystic ovary syndrome (PCOS)?",
+    "answerable": false,
+    "why_unanswerable": "PCOS not mentioned"
+  },
+  {
+    "id": "q57",
+    "question": "What dose of Zestril should be given to a dog with heart failure?",
+    "answerable": false,
+    "why_unanswerable": "no veterinary dosing"
+  },
+  {
+    "id": "q58",
+    "question": "Does the COVID-19 vaccine interact with warfarin?",
+    "answerable": false,
+    "why_unanswerable": "not mentioned"
+  },
+  {
+    "id": "q59",
+    "question": "How do I renew my driver's license in Massachusetts?",
+    "answerable": false,
+    "why_unanswerable": "off-topic"
+  },
+  {
+    "id": "q60",
+    "question": "What is the capital of Australia?",
+    "answerable": false,
+    "why_unanswerable": "off-topic"
+  }
+]

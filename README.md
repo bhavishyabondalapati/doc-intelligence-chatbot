@@ -105,21 +105,21 @@ Corpus: 5 FDA drug labels from DailyMed (Lipitor, Zoloft, Zestril, Jantoven/warf
 
 | Config | Hit@1 | Hit@4 | Hit@10 | MRR@10 [95% CI] | ΔMRR vs baseline [95% CI] | Abstain F1 (in-sample / 5-fold CV) | AUC | Answered w/ evidence | ms/query |
 |---|---|---|---|---|---|---|---|---|---|
-| baseline-minilm | 0.42 | 0.83 | 0.88 | 0.57 [0.46, 0.68] | — | 0.61 / 0.50 | 0.82 | 0.69 | 5 |
+| baseline-minilm | 0.42 | 0.83 | 0.88 | 0.57 [0.46, 0.68] | — | 0.61 / 0.50 | 0.82 | 0.69 | 4 |
 | bm25 | 0.58 | 0.83 | 0.94 | 0.71 [0.60, 0.81] | +0.14 [+0.01, +0.27] | 0.76 / 0.70 | 0.85 | 0.81 | 0 |
-| dense-bge-small | 0.56 | 0.88 | 1.00 | 0.71 [0.61, 0.80] | +0.14 [+0.05, +0.23] | 0.70 / 0.50 | 0.91 | 0.85 | 7 |
-| dense-bge-base | 0.50 | 0.81 | 0.98 | 0.66 [0.56, 0.76] | +0.09 [-0.00, +0.19] | 0.69 / 0.62 | 0.90 | 0.73 | 8 |
-| **hybrid-bge-small** (default) | **0.71** | 0.88 | 0.98 | **0.80** [0.70, 0.88] | **+0.23** [+0.11, +0.35] | 0.70 / 0.50 | 0.91 | 0.85 | 7 |
-| hybrid-bge-small+rerank | 0.58 | 0.85 | 0.94 | 0.72 [0.62, 0.82] | +0.15 [+0.03, +0.26] | 0.58 / 0.48 | 0.78 | 0.75 | 581 |
-| hybrid-bge-base+rerank | 0.58 | 0.92 | 0.94 | 0.72 [0.62, 0.82] | +0.15 [+0.03, +0.27] | 0.56 / 0.45 | 0.73 | 0.79 | 603 |
+| dense-bge-small | 0.56 | 0.88 | 1.00 | 0.71 [0.60, 0.80] | +0.14 [+0.05, +0.23] | 0.70 / 0.50 | 0.91 | 0.85 | 7 |
+| dense-bge-base | 0.50 | 0.81 | 0.96 | 0.66 [0.55, 0.76] | +0.09 [-0.00, +0.19] | 0.69 / 0.62 | 0.90 | 0.73 | 8 |
+| **hybrid-bge-small** (default) | **0.71** | 0.88 | 0.98 | **0.80** [0.70, 0.88] | **+0.23** [+0.11, +0.35] | 0.70 / 0.50 | 0.91 | 0.85 | 8 |
+| hybrid-bge-small+rerank | 0.56 | 0.85 | 0.94 | 0.70 [0.60, 0.80] | +0.13 [+0.02, +0.25] | 0.58 / 0.48 | 0.78 | 0.75 | 619 |
+| hybrid-bge-base+rerank | 0.56 | 0.92 | 0.94 | 0.71 [0.61, 0.81] | +0.14 [+0.02, +0.26] | 0.56 / 0.45 | 0.73 | 0.79 | 646 |
 
 *Hit@4* = the right chunk is among the 4 sent to the LLM. *Answered w/ evidence* = an answerable question passes the abstention threshold **and** has its evidence in those 4 chunks. *AUC* = how well the confidence score separates answerable from unanswerable questions (1.0 = perfectly). Timings are on an M4 Pro with the `mps` GPU.
 
 What the numbers say:
 
 - **Hybrid search scored best, and clearly beats the baseline** (+0.23 MRR, CI +0.11 to +0.35). Over `bge-small` alone, adding BM25 gave +0.09 MRR (CI −0.01 to +0.19). That points the same way, but the interval crosses zero, so this set is too small to prove BM25 adds value on top of `bge-small`.
-- **The cross-encoder reranker did not help here.** Compared with hybrid it changed MRR by −0.08 (CI −0.18 to +0.02, so not clearly worse, but no gain) at ~90× the latency. It also gave near-miss unanswerable questions very high scores: "omeprazole dose for heartburn" scored 0.99 because omeprazole is mentioned. So it is not the default.
-- **The bigger embedding model wasn't better.** `bge-base` scored −0.05 MRR vs `bge-small` (CI −0.11 to +0.02).
+- **The cross-encoder reranker did not help here.** Compared with hybrid it changed MRR by −0.09 (CI −0.19 to 0.00: the upper end sits right at zero and flips sign with the bootstrap seed, so it is probably worse but not proven) at ~90× the latency. It also gave near-miss unanswerable questions very high scores: "omeprazole dose for heartburn" scored 0.99 because omeprazole is mentioned. So it is not the default.
+- **The bigger embedding model wasn't better.** `bge-base` scored −0.05 MRR vs `bge-small` (CI −0.12 to +0.02).
 - **OCR'd text is retrievable, but the scanned PDF is the weak spot.** On its 8 questions, hybrid ranks the right chunk first for 5 (baseline: 2) but has it in the top 4 for only 6, while the baseline has all 8 in the top 4. BM25 likely suffers from OCR typos ("pyloriinfection") that break exact-word matches.
 - **Abstention from retrieval scores alone is weak.** The chosen threshold (0.702) abstains on 7 of 12 unanswerable questions with 87.5% precision while still answering 47 of 48 answerable ones. However, the cross-validated F1 is only 0.50, so the threshold is fragile. The LLM prompt is the second line of defense: in a manual test, a near-miss question that passed the threshold still got "I don't have enough information" from Gemini.
 
@@ -128,7 +128,7 @@ What the numbers say:
 ### Limitations (read before quoting numbers)
 
 - **Small eval set.** 48 answerable questions, so one question moves Hit@1 by ~2 points. The 95% confidence intervals above are the honest error bars; differences inside them are noise.
-- **Labels by one annotator, pooled at depth 1.** Questions and evidence quotes were written from the label text. They were then widened by judging each config's top-ranked chunk: 33 alternate quotes were added where a chunk answered in different words. A second review then removed 2 of them (a table heading, and a "recent changes" entry that named a warning without saying what it was), replaced one quote that didn't name the answer, and corrected one expected answer. Relevant chunks deeper in the rankings may still be unlabelled, so Hit@4/Hit@10 are lower bounds. Every label is listed in [`eval/results/labels_review.md`](eval/results/labels_review.md).
+- **Labels by one annotator, pooled at depth 1.** Questions and evidence quotes were written from the label text. They were then widened by judging each config's top-ranked chunk: 33 alternate quotes were added where a chunk answered in different words. A second review then removed 2 of them (a table heading, and a "recent changes" entry that named a warning without saying what it was), replaced one quote that didn't name the answer, corrected one expected answer, and removed a Highlights quote for q19 that left out the 48-hour dosing step. Relevant chunks deeper in the rankings may still be unlabelled, so Hit@4/Hit@10 are lower bounds. Every label is listed in [`eval/results/labels_review.md`](eval/results/labels_review.md).
 - **The scan is simulated.** It's a degraded rendering of a real label, because the FDA archive blocks scripted downloads of real scans.
 - **Threshold is corpus-specific.** It was tuned on drug labels with `bge-small`. On other documents, re-run the eval or pass `--threshold`.
 - **Layout is kept, not yet used for ranking.** Bounding boxes are stored and shown in citations, but chunking is word-window based. On two-column pages, PyMuPDF sometimes returns bullet glyphs as separate blocks, out of reading order.
@@ -144,7 +144,7 @@ What the numbers say:
 6. **Label audit.** Pooled the top result from every config, judged each one by hand, and added alternate wordings. Before this, every config's score was badly undercounted (e.g. baseline Hit@1 0.23 → 0.46).
 7. **Retrieval experiments.** Compared BM25, `bge-small`, `bge-base`, hybrid RRF and cross-encoder reranking, kept the best (hybrid `bge-small`), and set the abstention threshold from the PR curve.
 8. **End-to-end check.** Ran the chatbot on the public corpus against the real Gemini API.
-9. **Second label review.** A human review fixed 4 labels where the evidence quote didn't actually contain the answer. All scores dropped slightly (hybrid MRR 0.83 → 0.80), and the hybrid-vs-`bge-small` gain stopped being clearly significant. The numbers above are after this fix.
+9. **Second label review.** A human review fixed 5 labels where the evidence didn't fully contain the answer. All scores dropped slightly (hybrid MRR 0.83 → 0.80), and the hybrid-vs-`bge-small` gain stopped being clearly significant. The numbers above are after this fix.
 
 ## 7. Key concepts (interview-ready)
 

@@ -136,3 +136,28 @@ def cross_validated_f1(confidences, should_abstain, folds=5, seed=0):
     precision = tp / predicted.sum() if predicted.sum() else 1.0
     recall = tp / positive.sum() if positive.sum() else 0.0
     return 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+
+
+def bootstrap_ci(values, n_boot=10000, alpha=0.05, seed=0):
+    """
+    95% confidence interval for a mean by bootstrapping: resample the
+    questions with replacement many times and look at the spread of the
+    mean. With only 48 answerable questions, one question moves Hit@1 by
+    ~2 points, so differences smaller than the interval are noise.
+    """
+    values = np.asarray(values, dtype=float)
+    rng = np.random.default_rng(seed)
+    means = values[rng.integers(0, len(values), size=(n_boot, len(values)))].mean(axis=1)
+    return float(np.quantile(means, alpha / 2)), float(np.quantile(means, 1 - alpha / 2))
+
+
+def paired_bootstrap_diff(a, b, n_boot=10000, alpha=0.05, seed=0):
+    """
+    Mean of (a - b) over the same questions, with a 95% bootstrap interval.
+    Pairing matters: both systems answer the same questions, so we resample
+    questions (not each system separately). If the interval excludes 0,
+    the difference is unlikely to be luck.
+    """
+    diff = np.asarray(a, dtype=float) - np.asarray(b, dtype=float)
+    low, high = bootstrap_ci(diff, n_boot, alpha, seed)
+    return float(diff.mean()), low, high

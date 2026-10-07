@@ -45,3 +45,13 @@ def test_cross_validated_f1_is_perfect_when_separable():
     conf = [0.9] * 10 + [0.1] * 5
     abstain = [False] * 10 + [True] * 5
     assert cross_validated_f1(conf, abstain, folds=5) == 1.0
+
+
+def test_bootstrap_ci_brackets_the_mean_and_shrinks_with_n():
+    from docintel.evaluation import bootstrap_ci, paired_bootstrap_diff
+    small = bootstrap_ci([0, 1] * 10)
+    large = bootstrap_ci([0, 1] * 500)
+    assert small[0] < 0.5 < small[1]
+    assert (large[1] - large[0]) < (small[1] - small[0])
+    mean, low, high = paired_bootstrap_diff([1] * 30, [0] * 30)
+    assert mean == 1.0 and low == 1.0 and high == 1.0

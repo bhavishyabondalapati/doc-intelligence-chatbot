@@ -221,7 +221,7 @@ RETRIEVER_CONFIGS = {
     "hybrid-bge-small+rerank": ("bge-small", True, True),
     "hybrid-bge-base+rerank": ("bge-base", True, True),
 }
-DEFAULT_CONFIG = "hybrid-bge-small+rerank"
+DEFAULT_CONFIG = "hybrid-bge-small"
 
 
 def embed_model_for(config):

@@ -1,0 +1,6540 @@
+[
+  {
+    "config": "baseline-minilm",
+    "metrics": {
+      "hit@1": 0.4583333333333333,
+      "hit@3": 0.6666666666666666,
+      "hit@4": 0.8333333333333334,
+      "hit@5": 0.8333333333333334,
+      "hit@10": 0.875,
+      "mrr@10": 0.595858134920635,
+      "mrr@10_ci": [
+        0.48213975694444433,
+        0.704861111111111
+      ],
+      "hit@1_ci": [
+        0.3125,
+        0.6041666666666666
+      ],
+      "answered_with_evidence": 0.6875,
+      "mrr_diff_vs_baseline": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "abstention": {
+      "threshold": 0.6292604207992555,
+      "precision": 0.4583333333333333,
+      "recall": 0.9166666666666666,
+      "f1": 0.611111111111111,
+      "answered_rate": 0.7291666666666666,
+      "cv_f1": 0.5,
+      "auc": 0.8159722222222222
+    },
+    "pr_curve": [
+      {
+        "threshold": 0.08836186677217484,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.08836186677217485,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.15391892194747928,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.43055877089500433,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.43458583950996404,
+        "precision": 0.75,
+        "recall": 0.25,
+        "f1": 0.375,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.45913210511207586,
+        "precision": 0.6,
+        "recall": 0.25,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.4830280244350434,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.4839951395988465,
+        "precision": 0.5714285714285714,
+        "recall": 0.3333333333333333,
+        "f1": 0.4210526315789474,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.4893499612808228,
+        "precision": 0.625,
+        "recall": 0.4166666666666667,
+        "f1": 0.5,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.4936767518520356,
+        "precision": 0.5555555555555556,
+        "recall": 0.4166666666666667,
+        "f1": 0.4761904761904762,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.5387719869613649,
+        "precision": 0.5,
+        "recall": 0.4166666666666667,
+        "f1": 0.45454545454545453,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.5415444374084474,
+        "precision": 0.45454545454545453,
+        "recall": 0.4166666666666667,
+        "f1": 0.43478260869565216,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.5440710783004762,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.5589163303375245,
+        "precision": 0.46153846153846156,
+        "recall": 0.5,
+        "f1": 0.48000000000000004,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.5683075785636903,
+        "precision": 0.5,
+        "recall": 0.5833333333333334,
+        "f1": 0.5384615384615384,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.5686738491058351,
+        "precision": 0.4666666666666667,
+        "recall": 0.5833333333333334,
+        "f1": 0.5185185185185186,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.5798912048339845,
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1": 0.5714285714285715,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.5804632902145387,
+        "precision": 0.47058823529411764,
+        "recall": 0.6666666666666666,
+        "f1": 0.5517241379310345,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.5808290243148805,
+        "precision": 0.4444444444444444,
+        "recall": 0.6666666666666666,
+        "f1": 0.5333333333333333,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 0.5822165608406068,
+        "precision": 0.42105263157894735,
+        "recall": 0.6666666666666666,
+        "f1": 0.5161290322580646,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.5880322456359864,
+        "precision": 0.45,
+        "recall": 0.75,
+        "f1": 0.5625000000000001,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.5905448198318483,
+        "precision": 0.47619047619047616,
+        "recall": 0.8333333333333334,
+        "f1": 0.6060606060606061,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.5978441834449769,
+        "precision": 0.45454545454545453,
+        "recall": 0.8333333333333334,
+        "f1": 0.5882352941176471,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 0.6140507459640504,
+        "precision": 0.43478260869565216,
+        "recall": 0.8333333333333334,
+        "f1": 0.5714285714285714,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.6292604207992555,
+        "precision": 0.4583333333333333,
+        "recall": 0.9166666666666666,
+        "f1": 0.611111111111111,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.6379196643829347,
+        "precision": 0.44,
+        "recall": 0.9166666666666666,
+        "f1": 0.5945945945945945,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.6412851810455323,
+        "precision": 0.4230769230769231,
+        "recall": 0.9166666666666666,
+        "f1": 0.5789473684210527,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.647675395011902,
+        "precision": 0.4074074074074074,
+        "recall": 0.9166666666666666,
+        "f1": 0.5641025641025641,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 0.6485858559608461,
+        "precision": 0.39285714285714285,
+        "recall": 0.9166666666666666,
+        "f1": 0.55,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 0.66232168674469,
+        "precision": 0.3793103448275862,
+        "recall": 0.9166666666666666,
+        "f1": 0.5365853658536586,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.6645196080207826,
+        "precision": 0.36666666666666664,
+        "recall": 0.9166666666666666,
+        "f1": 0.5238095238095238,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.6658878326416017,
+        "precision": 0.3548387096774194,
+        "recall": 0.9166666666666666,
+        "f1": 0.5116279069767442,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 0.6679877042770387,
+        "precision": 0.34375,
+        "recall": 0.9166666666666666,
+        "f1": 0.5,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 0.6721467375755311,
+        "precision": 0.3333333333333333,
+        "recall": 0.9166666666666666,
+        "f1": 0.4888888888888888,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 0.6735177040100099,
+        "precision": 0.3235294117647059,
+        "recall": 0.9166666666666666,
+        "f1": 0.4782608695652174,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.6780089139938356,
+        "precision": 0.3142857142857143,
+        "recall": 0.9166666666666666,
+        "f1": 0.4680851063829787,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 0.6808839440345765,
+        "precision": 0.3055555555555556,
+        "recall": 0.9166666666666666,
+        "f1": 0.4583333333333333,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.6844671368598939,
+        "precision": 0.2972972972972973,
+        "recall": 0.9166666666666666,
+        "f1": 0.4489795918367347,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.6856050491333009,
+        "precision": 0.2894736842105263,
+        "recall": 0.9166666666666666,
+        "f1": 0.43999999999999995,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.6870514154434205,
+        "precision": 0.28205128205128205,
+        "recall": 0.9166666666666666,
+        "f1": 0.4313725490196078,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.6874529123306276,
+        "precision": 0.275,
+        "recall": 0.9166666666666666,
+        "f1": 0.4230769230769231,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 0.6892139911651612,
+        "precision": 0.2682926829268293,
+        "recall": 0.9166666666666666,
+        "f1": 0.4150943396226415,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 0.6928055286407472,
+        "precision": 0.2619047619047619,
+        "recall": 0.9166666666666666,
+        "f1": 0.4074074074074074,
+        "answered_rate": 0.3541666666666667
+      },
+      {
+        "threshold": 0.6936465501785279,
+        "precision": 0.2558139534883721,
+        "recall": 0.9166666666666666,
+        "f1": 0.4,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 0.6973868012428285,
+        "precision": 0.25,
+        "recall": 0.9166666666666666,
+        "f1": 0.3928571428571429,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 0.6984277963638307,
+        "precision": 0.24444444444444444,
+        "recall": 0.9166666666666666,
+        "f1": 0.3859649122807018,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.6989001035690309,
+        "precision": 0.2391304347826087,
+        "recall": 0.9166666666666666,
+        "f1": 0.3793103448275862,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.6991820335388185,
+        "precision": 0.23404255319148937,
+        "recall": 0.9166666666666666,
+        "f1": 0.3728813559322034,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 0.6997342109680177,
+        "precision": 0.22916666666666666,
+        "recall": 0.9166666666666666,
+        "f1": 0.36666666666666664,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 0.7016863822937013,
+        "precision": 0.22448979591836735,
+        "recall": 0.9166666666666666,
+        "f1": 0.36065573770491804,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 0.7048597931861879,
+        "precision": 0.22,
+        "recall": 0.9166666666666666,
+        "f1": 0.3548387096774193,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 0.7105433940887452,
+        "precision": 0.21568627450980393,
+        "recall": 0.9166666666666666,
+        "f1": 0.3492063492063492,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 0.721397638320923,
+        "precision": 0.21153846153846154,
+        "recall": 0.9166666666666666,
+        "f1": 0.34374999999999994,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 0.7231045365333558,
+        "precision": 0.20754716981132076,
+        "recall": 0.9166666666666666,
+        "f1": 0.3384615384615385,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 0.7233719229698182,
+        "precision": 0.2037037037037037,
+        "recall": 0.9166666666666666,
+        "f1": 0.3333333333333333,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 0.7357025742530824,
+        "precision": 0.2,
+        "recall": 0.9166666666666666,
+        "f1": 0.3283582089552239,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.7379677295684816,
+        "precision": 0.21428571428571427,
+        "recall": 1.0,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.7440763711929322,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 0.7751281261444093,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 0.816144347190857,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 0.8181229829788209,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 5.042746167047881,
+    "ms_per_query": 4.6855966017271085,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7233719229698181,
+        "top_chunk": "lipitor_atorvastatin_9",
+        "rr": 0.5
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.5978441834449768,
+        "top_chunk": "lipitor_atorvastatin_80",
+        "rr": 0.0
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6645196080207825,
+        "top_chunk": "lipitor_atorvastatin_24",
+        "rr": 0.25
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.568673849105835,
+        "top_chunk": "lipitor_atorvastatin_65",
+        "rr": 0.0
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6997342109680176,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.5808290243148804,
+        "top_chunk": "lipitor_atorvastatin_76",
+        "rr": 0.0
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.5822165608406067,
+        "top_chunk": "metformin_laurus_88",
+        "rr": 0.5
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6936465501785278,
+        "top_chunk": "lipitor_atorvastatin_94",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8181229829788208,
+        "top_chunk": "zoloft_sertraline_9",
+        "rr": 1.0
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.6780089139938354,
+        "top_chunk": "zoloft_sertraline_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6892139911651611,
+        "top_chunk": "zoloft_sertraline_3",
+        "rr": 0.25
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7231045365333557,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6989001035690308,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6928055286407471,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8161443471908569,
+        "top_chunk": "zoloft_sertraline_9",
+        "rr": 1.0
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.672146737575531,
+        "top_chunk": "zoloft_sertraline_25",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.4936767518520355,
+        "top_chunk": "zestril_lisinopril_31",
+        "rr": 0.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7213976383209229,
+        "top_chunk": "zestril_lisinopril_48",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": 8,
+        "confidence": 0.6984277963638306,
+        "top_chunk": "zestril_lisinopril_48",
+        "rr": 0.125
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.5387719869613647,
+        "top_chunk": "zestril_lisinopril_14",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6844671368598938,
+        "top_chunk": "zestril_lisinopril_49",
+        "rr": 0.25
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.7440763711929321,
+        "top_chunk": "zestril_lisinopril_27",
+        "rr": 0.25
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7357025742530823,
+        "top_chunk": "zestril_lisinopril_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6379196643829346,
+        "top_chunk": "zestril_lisinopril_48",
+        "rr": 0.25
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.434585839509964,
+        "top_chunk": "jantoven_warfarin_22",
+        "rr": 0.0
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6874529123306274,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.6973868012428284,
+        "top_chunk": "jantoven_warfarin_13",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6808839440345764,
+        "top_chunk": "jantoven_warfarin_49",
+        "rr": 0.25
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 7,
+        "confidence": 0.7048597931861877,
+        "top_chunk": "jantoven_warfarin_40",
+        "rr": 0.14285714285714285
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6476753950119019,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6412851810455322,
+        "top_chunk": "jantoven_warfarin_38",
+        "rr": 1.0
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.4591321051120758,
+        "top_chunk": "jantoven_warfarin_39",
+        "rr": 1.0
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.48302802443504333,
+        "top_chunk": "metformin_laurus_49",
+        "rr": 0.0
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.648585855960846,
+        "top_chunk": "metformin_laurus_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6140507459640503,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6991820335388184,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6870514154434204,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.5415444374084473,
+        "top_chunk": "metformin_laurus_11",
+        "rr": 1.0
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.5804632902145386,
+        "top_chunk": "metformin_laurus_86",
+        "rr": 1.0
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6658878326416016,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.5589163303375244,
+        "top_chunk": "amoxicillin_capsule_SCANNED_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7105433940887451,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6679877042770386,
+        "top_chunk": "amoxicillin_capsule_SCANNED_11",
+        "rr": 0.25
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6623216867446899,
+        "top_chunk": "amoxicillin_capsule_SCANNED_12",
+        "rr": 0.25
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6735177040100098,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7016863822937012,
+        "top_chunk": "amoxicillin_capsule_SCANNED_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7751281261444092,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.6856050491333008,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.5
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.5880322456359863,
+        "top_chunk": "metformin_laurus_47"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.5905448198318481,
+        "top_chunk": "zestril_lisinopril_10"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.48399513959884644,
+        "top_chunk": "lipitor_atorvastatin_59"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.5440710783004761,
+        "top_chunk": "lipitor_atorvastatin_3"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6292604207992554,
+        "top_chunk": "jantoven_warfarin_67"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.48934996128082275,
+        "top_chunk": "zoloft_sertraline_62"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.5798912048339844,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.5683075785636902,
+        "top_chunk": "metformin_laurus_53"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7379677295684814,
+        "top_chunk": "zestril_lisinopril_12"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.4305587708950043,
+        "top_chunk": "jantoven_warfarin_54"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.15391892194747925,
+        "top_chunk": "metformin_laurus_4"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.08836186677217484,
+        "top_chunk": "zoloft_sertraline_56"
+      }
+    ]
+  },
+  {
+    "config": "bm25",
+    "metrics": {
+      "hit@1": 0.6041666666666666,
+      "hit@3": 0.8333333333333334,
+      "hit@4": 0.8541666666666666,
+      "hit@5": 0.875,
+      "hit@10": 0.9583333333333334,
+      "mrr@10": 0.7264715608465608,
+      "mrr@10_ci": [
+        0.6229976851851852,
+        0.8246527777777778
+      ],
+      "hit@1_ci": [
+        0.4583333333333333,
+        0.75
+      ],
+      "answered_with_evidence": 0.8333333333333334,
+      "mrr_diff_vs_baseline": [
+        0.13061342592592592,
+        -0.0018621858465608563,
+        0.26632771164021163
+      ]
+    },
+    "abstention": {
+      "threshold": 7.911167488844219,
+      "precision": 0.8888888888888888,
+      "recall": 0.6666666666666666,
+      "f1": 0.761904761904762,
+      "answered_rate": 0.9791666666666666,
+      "cv_f1": 0.7000000000000001,
+      "auc": 0.8454861111111112
+    },
+    "pr_curve": [
+      {
+        "threshold": 0.0,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 5e-324,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 4.8571857496625555,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 6.611120719625522,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 7.171499494011284,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 7.290861497248064,
+        "precision": 1.0,
+        "recall": 0.4166666666666667,
+        "f1": 0.5882352941176471,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 7.341321948050192,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 7.823186614609787,
+        "precision": 0.8571428571428571,
+        "recall": 0.5,
+        "f1": 0.631578947368421,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 7.867762089712609,
+        "precision": 0.875,
+        "recall": 0.5833333333333334,
+        "f1": 0.7000000000000001,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 7.911167488844219,
+        "precision": 0.8888888888888888,
+        "recall": 0.6666666666666666,
+        "f1": 0.761904761904762,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 7.955147082342483,
+        "precision": 0.8,
+        "recall": 0.6666666666666666,
+        "f1": 0.7272727272727272,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 8.00264933123435,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 8.141545699624684,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 8.387476899014578,
+        "precision": 0.6153846153846154,
+        "recall": 0.6666666666666666,
+        "f1": 0.64,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 8.486958114264356,
+        "precision": 0.6428571428571429,
+        "recall": 0.75,
+        "f1": 0.6923076923076924,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 8.763519728884837,
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.6666666666666665,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 9.156730217595532,
+        "precision": 0.5625,
+        "recall": 0.75,
+        "f1": 0.6428571428571429,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 9.766903632179195,
+        "precision": 0.5294117647058824,
+        "recall": 0.75,
+        "f1": 0.6206896551724139,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 10.69429723407206,
+        "precision": 0.5,
+        "recall": 0.75,
+        "f1": 0.6,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 11.1316842476692,
+        "precision": 0.47368421052631576,
+        "recall": 0.75,
+        "f1": 0.5806451612903226,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 11.21350470397953,
+        "precision": 0.45,
+        "recall": 0.75,
+        "f1": 0.5625000000000001,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 11.71298968046694,
+        "precision": 0.42857142857142855,
+        "recall": 0.75,
+        "f1": 0.5454545454545454,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 12.070949788031754,
+        "precision": 0.4090909090909091,
+        "recall": 0.75,
+        "f1": 0.5294117647058824,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 12.453692071870645,
+        "precision": 0.43478260869565216,
+        "recall": 0.8333333333333334,
+        "f1": 0.5714285714285714,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 12.621234668368368,
+        "precision": 0.4166666666666667,
+        "recall": 0.8333333333333334,
+        "f1": 0.5555555555555556,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 12.682832148701353,
+        "precision": 0.4,
+        "recall": 0.8333333333333334,
+        "f1": 0.5405405405405406,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 12.92507861980699,
+        "precision": 0.38461538461538464,
+        "recall": 0.8333333333333334,
+        "f1": 0.5263157894736842,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 12.961243777058488,
+        "precision": 0.37037037037037035,
+        "recall": 0.8333333333333334,
+        "f1": 0.5128205128205128,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 13.071826490773391,
+        "precision": 0.35714285714285715,
+        "recall": 0.8333333333333334,
+        "f1": 0.5,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 13.194020672254732,
+        "precision": 0.3448275862068966,
+        "recall": 0.8333333333333334,
+        "f1": 0.4878048780487806,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 13.23474177734568,
+        "precision": 0.3333333333333333,
+        "recall": 0.8333333333333334,
+        "f1": 0.47619047619047616,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 13.340621247666226,
+        "precision": 0.3225806451612903,
+        "recall": 0.8333333333333334,
+        "f1": 0.4651162790697674,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 13.75782072581459,
+        "precision": 0.3125,
+        "recall": 0.8333333333333334,
+        "f1": 0.45454545454545453,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 14.104205289927469,
+        "precision": 0.30303030303030304,
+        "recall": 0.8333333333333334,
+        "f1": 0.4444444444444444,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 14.217582920805519,
+        "precision": 0.29411764705882354,
+        "recall": 0.8333333333333334,
+        "f1": 0.4347826086956522,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 14.348850573765546,
+        "precision": 0.3142857142857143,
+        "recall": 0.9166666666666666,
+        "f1": 0.4680851063829787,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 14.349969586274218,
+        "precision": 0.3055555555555556,
+        "recall": 0.9166666666666666,
+        "f1": 0.4583333333333333,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 15.672892714268437,
+        "precision": 0.2972972972972973,
+        "recall": 0.9166666666666666,
+        "f1": 0.4489795918367347,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 15.810509536932198,
+        "precision": 0.2894736842105263,
+        "recall": 0.9166666666666666,
+        "f1": 0.43999999999999995,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 16.268324048209962,
+        "precision": 0.28205128205128205,
+        "recall": 0.9166666666666666,
+        "f1": 0.4313725490196078,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 16.71445578939947,
+        "precision": 0.275,
+        "recall": 0.9166666666666666,
+        "f1": 0.4230769230769231,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 16.753525002417998,
+        "precision": 0.2682926829268293,
+        "recall": 0.9166666666666666,
+        "f1": 0.4150943396226415,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 16.926182821579456,
+        "precision": 0.2558139534883721,
+        "recall": 0.9166666666666666,
+        "f1": 0.4,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 17.330978911185383,
+        "precision": 0.25,
+        "recall": 0.9166666666666666,
+        "f1": 0.3928571428571429,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 17.62432095496332,
+        "precision": 0.24444444444444444,
+        "recall": 0.9166666666666666,
+        "f1": 0.3859649122807018,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 18.236370578098875,
+        "precision": 0.2391304347826087,
+        "recall": 0.9166666666666666,
+        "f1": 0.3793103448275862,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 18.6650004677899,
+        "precision": 0.23404255319148937,
+        "recall": 0.9166666666666666,
+        "f1": 0.3728813559322034,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 18.718000654163443,
+        "precision": 0.22916666666666666,
+        "recall": 0.9166666666666666,
+        "f1": 0.36666666666666664,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 18.909478549180303,
+        "precision": 0.22448979591836735,
+        "recall": 0.9166666666666666,
+        "f1": 0.36065573770491804,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 18.989017858437713,
+        "precision": 0.22,
+        "recall": 0.9166666666666666,
+        "f1": 0.3548387096774193,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 19.249090718356182,
+        "precision": 0.21568627450980393,
+        "recall": 0.9166666666666666,
+        "f1": 0.3492063492063492,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 19.267740674309117,
+        "precision": 0.21153846153846154,
+        "recall": 0.9166666666666666,
+        "f1": 0.34374999999999994,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 19.936081609340334,
+        "precision": 0.20754716981132076,
+        "recall": 0.9166666666666666,
+        "f1": 0.3384615384615385,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 20.76986195098646,
+        "precision": 0.2037037037037037,
+        "recall": 0.9166666666666666,
+        "f1": 0.3333333333333333,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 21.108347208621115,
+        "precision": 0.2,
+        "recall": 0.9166666666666666,
+        "f1": 0.3283582089552239,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 23.5055320180912,
+        "precision": 0.19642857142857142,
+        "recall": 0.9166666666666666,
+        "f1": 0.32352941176470584,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 24.798356594754488,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 28.45812189434006,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 28.949042384194858,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 30.94452131877827,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 0.017921958002261817,
+    "ms_per_query": 0.21963746791395047,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 13.757820725814588,
+        "top_chunk": "lipitor_atorvastatin_9",
+        "rr": 0.5
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 8.141545699624682,
+        "top_chunk": "metformin_laurus_86",
+        "rr": 0.5
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 9,
+        "confidence": 16.753525002417994,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 0.1111111111111111
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 16.926182821579452,
+        "top_chunk": "zoloft_sertraline_115",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 18.23637057809887,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 19.24909071835618,
+        "top_chunk": "metformin_laurus_45",
+        "rr": 0.25
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 8.763519728884836,
+        "top_chunk": "lipitor_atorvastatin_101",
+        "rr": 1.0
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 13.19402067225473,
+        "top_chunk": "lipitor_atorvastatin_94",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 18.665000467789895,
+        "top_chunk": "zoloft_sertraline_2",
+        "rr": 0.5
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 23.505532018091195,
+        "top_chunk": "zoloft_sertraline_11",
+        "rr": 1.0
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 12.621234668368366,
+        "top_chunk": "zoloft_sertraline_109",
+        "rr": 1.0
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 13.07182649077339,
+        "top_chunk": "zoloft_sertraline_97",
+        "rr": 0.5
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 15.672892714268436,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 28.458121894340056,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 15.810509536932196,
+        "top_chunk": "zoloft_sertraline_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 7.955147082342482,
+        "top_chunk": "zoloft_sertraline_42",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 13.234741777345679,
+        "top_chunk": "zestril_lisinopril_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 12.925078619806989,
+        "top_chunk": "zestril_lisinopril_56",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": null,
+        "confidence": 10.694297234072058,
+        "top_chunk": "lipitor_atorvastatin_89",
+        "rr": 0.0
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 19.93608160934033,
+        "top_chunk": "zestril_lisinopril_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 12.070949788031752,
+        "top_chunk": "zestril_lisinopril_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": null,
+        "confidence": 17.33097891118538,
+        "top_chunk": "zestril_lisinopril_54",
+        "rr": 0.0
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 14.104205289927467,
+        "top_chunk": "zestril_lisinopril_11",
+        "rr": 1.0
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 7.823186614609786,
+        "top_chunk": "zestril_lisinopril_35",
+        "rr": 1.0
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 11.712989680466938,
+        "top_chunk": "jantoven_warfarin_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 30.944521318778268,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 18.98901785843771,
+        "top_chunk": "jantoven_warfarin_14",
+        "rr": 1.0
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 8.387476899014576,
+        "top_chunk": "jantoven_warfarin_21",
+        "rr": 1.0
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 11.213504703979527,
+        "top_chunk": "jantoven_warfarin_73",
+        "rr": 1.0
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 19.267740674309113,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 7,
+        "confidence": 12.961243777058487,
+        "top_chunk": "jantoven_warfarin_80",
+        "rr": 0.14285714285714285
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 8.002649331234348,
+        "top_chunk": "metformin_laurus_75",
+        "rr": 0.2
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 9.766903632179194,
+        "top_chunk": "metformin_laurus_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 18.9094785491803,
+        "top_chunk": "metformin_laurus_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 17.624320954963316,
+        "top_chunk": "metformin_laurus_9",
+        "rr": 0.5
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 20.769861950986456,
+        "top_chunk": "metformin_laurus_9",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 14.349969586274216,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 16.714455789399466,
+        "top_chunk": "metformin_laurus_78",
+        "rr": 1.0
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 16.926182821579452,
+        "top_chunk": "zoloft_sertraline_115",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 14.217582920805517,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 12.682832148701351,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 11.131684247669199,
+        "top_chunk": "metformin_laurus_42",
+        "rr": 0.5
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 28.949042384194854,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10",
+        "rr": 0.5
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 9.15673021759553,
+        "top_chunk": "amoxicillin_capsule_SCANNED_8",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 13.340621247666224,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 21.10834720862111,
+        "top_chunk": "amoxicillin_capsule_SCANNED_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 18.71800065416344,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 16.26832404820996,
+        "top_chunk": "amoxicillin_capsule_SCANNED_5",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 7.911167488844218,
+        "top_chunk": "metformin_laurus_20"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 6.6111207196255215,
+        "top_chunk": "jantoven_warfarin_35"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 12.453692071870643,
+        "top_chunk": "jantoven_warfarin_53"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 8.486958114264354,
+        "top_chunk": "lipitor_atorvastatin_96"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 7.867762089712608,
+        "top_chunk": "jantoven_warfarin_43"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 7.171499494011283,
+        "top_chunk": "zoloft_sertraline_67"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 24.798356594754484,
+        "top_chunk": "amoxicillin_capsule_SCANNED_1"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 7.341321948050191,
+        "top_chunk": "metformin_laurus_90"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 14.348850573765544,
+        "top_chunk": "zestril_lisinopril_56"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 7.290861497248063,
+        "top_chunk": "jantoven_warfarin_75"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 4.857185749662555,
+        "top_chunk": "zoloft_sertraline_109"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.0,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0"
+      }
+    ]
+  },
+  {
+    "config": "dense-bge-small",
+    "metrics": {
+      "hit@1": 0.5625,
+      "hit@3": 0.8333333333333334,
+      "hit@4": 0.8958333333333334,
+      "hit@5": 0.8958333333333334,
+      "hit@10": 1.0,
+      "mrr@10": 0.7104993386243387,
+      "mrr@10_ci": [
+        0.6104604828042328,
+        0.8051467427248677
+      ],
+      "hit@1_ci": [
+        0.4166666666666667,
+        0.7083333333333334
+      ],
+      "answered_with_evidence": 0.875,
+      "mrr_diff_vs_baseline": [
+        0.11464120370370372,
+        0.026801835317460315,
+        0.20854145998677245
+      ]
+    },
+    "abstention": {
+      "threshold": 0.7024116516113282,
+      "precision": 0.875,
+      "recall": 0.5833333333333334,
+      "f1": 0.7000000000000001,
+      "answered_rate": 0.9791666666666666,
+      "cv_f1": 0.5,
+      "auc": 0.9149305555555556
+    },
+    "pr_curve": [
+      {
+        "threshold": 0.41809237003326416,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.4180923700332642,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.48649281263351446,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.6337608098983766,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.6805105209350587,
+        "precision": 0.75,
+        "recall": 0.25,
+        "f1": 0.375,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.6981557607650758,
+        "precision": 0.8,
+        "recall": 0.3333333333333333,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.6994567513465882,
+        "precision": 0.8333333333333334,
+        "recall": 0.4166666666666667,
+        "f1": 0.5555555555555556,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.7022249698638917,
+        "precision": 0.8571428571428571,
+        "recall": 0.5,
+        "f1": 0.631578947368421,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.7024116516113282,
+        "precision": 0.875,
+        "recall": 0.5833333333333334,
+        "f1": 0.7000000000000001,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.7036589384078981,
+        "precision": 0.7777777777777778,
+        "recall": 0.5833333333333334,
+        "f1": 0.6666666666666666,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.7060202956199647,
+        "precision": 0.7,
+        "recall": 0.5833333333333334,
+        "f1": 0.6363636363636365,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.7096588015556337,
+        "precision": 0.6363636363636364,
+        "recall": 0.5833333333333334,
+        "f1": 0.6086956521739131,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.7145327329635621,
+        "precision": 0.5833333333333334,
+        "recall": 0.5833333333333334,
+        "f1": 0.5833333333333334,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.7257758378982545,
+        "precision": 0.6153846153846154,
+        "recall": 0.6666666666666666,
+        "f1": 0.64,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.732556700706482,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7352657318115235,
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.6666666666666665,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7472573518753053,
+        "precision": 0.5625,
+        "recall": 0.75,
+        "f1": 0.6428571428571429,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.7532353401184083,
+        "precision": 0.5882352941176471,
+        "recall": 0.8333333333333334,
+        "f1": 0.6896551724137931,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.7555916309356691,
+        "precision": 0.5555555555555556,
+        "recall": 0.8333333333333334,
+        "f1": 0.6666666666666667,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.7564949989318849,
+        "precision": 0.5263157894736842,
+        "recall": 0.8333333333333334,
+        "f1": 0.6451612903225806,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.7586644887924195,
+        "precision": 0.55,
+        "recall": 0.9166666666666666,
+        "f1": 0.6874999999999999,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.7593879103660585,
+        "precision": 0.5238095238095238,
+        "recall": 0.9166666666666666,
+        "f1": 0.6666666666666667,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 0.7616414427757264,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.7647308111190797,
+        "precision": 0.4782608695652174,
+        "recall": 0.9166666666666666,
+        "f1": 0.6285714285714286,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 0.7667230367660524,
+        "precision": 0.4583333333333333,
+        "recall": 0.9166666666666666,
+        "f1": 0.611111111111111,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.769265115261078,
+        "precision": 0.44,
+        "recall": 0.9166666666666666,
+        "f1": 0.5945945945945945,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.7720149755477906,
+        "precision": 0.4230769230769231,
+        "recall": 0.9166666666666666,
+        "f1": 0.5789473684210527,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.7724965810775758,
+        "precision": 0.4074074074074074,
+        "recall": 0.9166666666666666,
+        "f1": 0.5641025641025641,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 0.7755331397056581,
+        "precision": 0.39285714285714285,
+        "recall": 0.9166666666666666,
+        "f1": 0.55,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 0.7773724198341371,
+        "precision": 0.3793103448275862,
+        "recall": 0.9166666666666666,
+        "f1": 0.5365853658536586,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.7832159996032716,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.7836542129516603,
+        "precision": 0.3870967741935484,
+        "recall": 1.0,
+        "f1": 0.5581395348837209,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.7879434823989869,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 0.7888054847717286,
+        "precision": 0.36363636363636365,
+        "recall": 1.0,
+        "f1": 0.5333333333333333,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 0.7891031503677369,
+        "precision": 0.35294117647058826,
+        "recall": 1.0,
+        "f1": 0.5217391304347826,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 0.7930525541305543,
+        "precision": 0.34285714285714286,
+        "recall": 1.0,
+        "f1": 0.5106382978723404,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.7952616214752198,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 0.8012824654579164,
+        "precision": 0.32432432432432434,
+        "recall": 1.0,
+        "f1": 0.489795918367347,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.8101372718811036,
+        "precision": 0.3157894736842105,
+        "recall": 1.0,
+        "f1": 0.4799999999999999,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.811835289001465,
+        "precision": 0.3076923076923077,
+        "recall": 1.0,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.816429376602173,
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615384615384615,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.8170051574707032,
+        "precision": 0.2926829268292683,
+        "recall": 1.0,
+        "f1": 0.45283018867924524,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 0.8182038068771363,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444445,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 0.8197402358055116,
+        "precision": 0.27906976744186046,
+        "recall": 1.0,
+        "f1": 0.43636363636363634,
+        "answered_rate": 0.3541666666666667
+      },
+      {
+        "threshold": 0.8202624320983888,
+        "precision": 0.2727272727272727,
+        "recall": 1.0,
+        "f1": 0.42857142857142855,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 0.821267068386078,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.4210526315789474,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 0.8218160867691041,
+        "precision": 0.2608695652173913,
+        "recall": 1.0,
+        "f1": 0.41379310344827586,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.8218677043914796,
+        "precision": 0.2553191489361702,
+        "recall": 1.0,
+        "f1": 0.4067796610169491,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.8262184858322145,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 0.8264331221580506,
+        "precision": 0.24489795918367346,
+        "recall": 1.0,
+        "f1": 0.39344262295081966,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 0.8266703486442567,
+        "precision": 0.24,
+        "recall": 1.0,
+        "f1": 0.3870967741935484,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 0.8272502422332765,
+        "precision": 0.23529411764705882,
+        "recall": 1.0,
+        "f1": 0.38095238095238093,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 0.8320686817169191,
+        "precision": 0.23076923076923078,
+        "recall": 1.0,
+        "f1": 0.375,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 0.8321805000305177,
+        "precision": 0.22641509433962265,
+        "recall": 1.0,
+        "f1": 0.36923076923076925,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 0.8338558673858644,
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 0.8361617326736451,
+        "precision": 0.21818181818181817,
+        "recall": 1.0,
+        "f1": 0.3582089552238806,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 0.8363642692565919,
+        "precision": 0.21428571428571427,
+        "recall": 1.0,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.8400760293006898,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 0.8442969322204591,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 0.852825164794922,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 0.8539003729820253,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 3.4474463330116123,
+    "ms_per_query": 6.839570174148927,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.832068681716919,
+        "top_chunk": "lipitor_atorvastatin_9",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": 7,
+        "confidence": 0.7724965810775757,
+        "top_chunk": "lipitor_atorvastatin_85",
+        "rr": 0.14285714285714285
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8272502422332764,
+        "top_chunk": "lipitor_atorvastatin_18",
+        "rr": 1.0
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7667230367660522,
+        "top_chunk": "lipitor_atorvastatin_14",
+        "rr": 0.5
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7879434823989868,
+        "top_chunk": "lipitor_atorvastatin_15",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.7891031503677368,
+        "top_chunk": "metformin_laurus_45",
+        "rr": 0.25
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8202624320983887,
+        "top_chunk": "lipitor_atorvastatin_99",
+        "rr": 1.0
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8170051574707031,
+        "top_chunk": "lipitor_atorvastatin_94",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.821816086769104,
+        "top_chunk": "zoloft_sertraline_10",
+        "rr": 0.5
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7952616214752197,
+        "top_chunk": "zoloft_sertraline_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7096588015556335,
+        "top_chunk": "zoloft_sertraline_98",
+        "rr": 0.5
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8262184858322144,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8118352890014648,
+        "top_chunk": "zoloft_sertraline_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.844296932220459,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.836161732673645,
+        "top_chunk": "zoloft_sertraline_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7647308111190796,
+        "top_chunk": "zoloft_sertraline_25",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7325567007064819,
+        "top_chunk": "zestril_lisinopril_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 9,
+        "confidence": 0.8012824654579163,
+        "top_chunk": "zestril_lisinopril_57",
+        "rr": 0.1111111111111111
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.775533139705658,
+        "top_chunk": "zestril_lisinopril_57",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7593879103660583,
+        "top_chunk": "zestril_lisinopril_60",
+        "rr": 0.5
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7930525541305542,
+        "top_chunk": "zestril_lisinopril_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8264331221580505,
+        "top_chunk": "zestril_lisinopril_25",
+        "rr": 1.0
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8363642692565918,
+        "top_chunk": "zestril_lisinopril_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7472573518753052,
+        "top_chunk": "zestril_lisinopril_35",
+        "rr": 1.0
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.6805105209350586,
+        "top_chunk": "jantoven_warfarin_78",
+        "rr": 0.25
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8101372718811035,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.8182038068771362,
+        "top_chunk": "jantoven_warfarin_13",
+        "rr": 0.25
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7692651152610779,
+        "top_chunk": "jantoven_warfarin_49",
+        "rr": 0.5
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.7836542129516602,
+        "top_chunk": "jantoven_warfarin_41",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8321805000305176,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7616414427757263,
+        "top_chunk": "jantoven_warfarin_39",
+        "rr": 1.0
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.714532732963562,
+        "top_chunk": "jantoven_warfarin_44",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.755591630935669,
+        "top_chunk": "metformin_laurus_3",
+        "rr": 0.5
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.777372419834137,
+        "top_chunk": "metformin_laurus_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8338558673858643,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8539003729820251,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8528251647949219,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7720149755477905,
+        "top_chunk": "metformin_laurus_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8164293766021729,
+        "top_chunk": "metformin_laurus_86",
+        "rr": 1.0
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8400760293006897,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.703658938407898,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.8218677043914795,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7888054847717285,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": 10,
+        "confidence": 0.7060202956199646,
+        "top_chunk": "amoxicillin_capsule_SCANNED_12",
+        "rr": 0.1
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7564949989318848,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8197402358055115,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8212670683860779,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.8266703486442566,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7586644887924194,
+        "top_chunk": "metformin_laurus_48"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7024116516113281,
+        "top_chunk": "amoxicillin_capsule_SCANNED_2"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6981557607650757,
+        "top_chunk": "metformin_laurus_45"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7352657318115234,
+        "top_chunk": "lipitor_atorvastatin_77"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7257758378982544,
+        "top_chunk": "jantoven_warfarin_74"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6337608098983765,
+        "top_chunk": "zoloft_sertraline_63"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7532353401184082,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6994567513465881,
+        "top_chunk": "metformin_laurus_71"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7832159996032715,
+        "top_chunk": "zestril_lisinopril_58"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7022249698638916,
+        "top_chunk": "jantoven_warfarin_33"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.4864928126335144,
+        "top_chunk": "metformin_laurus_85"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.41809237003326416,
+        "top_chunk": "lipitor_atorvastatin_104"
+      }
+    ]
+  },
+  {
+    "config": "dense-bge-base",
+    "metrics": {
+      "hit@1": 0.5208333333333334,
+      "hit@3": 0.8333333333333334,
+      "hit@4": 0.8333333333333334,
+      "hit@5": 0.875,
+      "hit@10": 0.9791666666666666,
+      "mrr@10": 0.6796875,
+      "mrr@10_ci": [
+        0.5765581597222222,
+        0.7743055555555555
+      ],
+      "hit@1_ci": [
+        0.375,
+        0.6666666666666666
+      ],
+      "answered_with_evidence": 0.75,
+      "mrr_diff_vs_baseline": [
+        0.0838293650793651,
+        -0.006997767857142853,
+        0.178125
+      ]
+    },
+    "abstention": {
+      "threshold": 0.6922320723533631,
+      "precision": 0.5882352941176471,
+      "recall": 0.8333333333333334,
+      "f1": 0.6896551724137931,
+      "answered_rate": 0.8541666666666666,
+      "cv_f1": 0.6153846153846153,
+      "auc": 0.8958333333333334
+    },
+    "pr_curve": [
+      {
+        "threshold": 0.35517823696136475,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.3551782369613648,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.4446313083171845,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.5424617528915406,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.6276382803916932,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.646777629852295,
+        "precision": 0.8,
+        "recall": 0.3333333333333333,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.6474030017852784,
+        "precision": 0.6666666666666666,
+        "recall": 0.3333333333333333,
+        "f1": 0.4444444444444444,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.6509772539138795,
+        "precision": 0.7142857142857143,
+        "recall": 0.4166666666666667,
+        "f1": 0.5263157894736842,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.6570682525634767,
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1": 0.6,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.6597700119018556,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285715,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.6651482582092286,
+        "precision": 0.7,
+        "recall": 0.5833333333333334,
+        "f1": 0.6363636363636365,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.6668636798858644,
+        "precision": 0.6363636363636364,
+        "recall": 0.5833333333333334,
+        "f1": 0.6086956521739131,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.6670354008674623,
+        "precision": 0.5833333333333334,
+        "recall": 0.5833333333333334,
+        "f1": 0.5833333333333334,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.6692954897880555,
+        "precision": 0.6153846153846154,
+        "recall": 0.6666666666666666,
+        "f1": 0.64,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.6756287217140199,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.6765441894531251,
+        "precision": 0.5333333333333333,
+        "recall": 0.6666666666666666,
+        "f1": 0.5925925925925926,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.6859760880470277,
+        "precision": 0.5625,
+        "recall": 0.75,
+        "f1": 0.6428571428571429,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.6922320723533631,
+        "precision": 0.5882352941176471,
+        "recall": 0.8333333333333334,
+        "f1": 0.6896551724137931,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.6937755346298219,
+        "precision": 0.5555555555555556,
+        "recall": 0.8333333333333334,
+        "f1": 0.6666666666666667,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.7132340669631959,
+        "precision": 0.5263157894736842,
+        "recall": 0.8333333333333334,
+        "f1": 0.6451612903225806,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.7145872116088868,
+        "precision": 0.5,
+        "recall": 0.8333333333333334,
+        "f1": 0.625,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 0.7233616113662721,
+        "precision": 0.47619047619047616,
+        "recall": 0.8333333333333334,
+        "f1": 0.6060606060606061,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.7249693870544435,
+        "precision": 0.45454545454545453,
+        "recall": 0.8333333333333334,
+        "f1": 0.5882352941176471,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 0.7253324985504152,
+        "precision": 0.43478260869565216,
+        "recall": 0.8333333333333334,
+        "f1": 0.5714285714285714,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.7280112504959108,
+        "precision": 0.4166666666666667,
+        "recall": 0.8333333333333334,
+        "f1": 0.5555555555555556,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.7280752658843995,
+        "precision": 0.4,
+        "recall": 0.8333333333333334,
+        "f1": 0.5405405405405406,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.7316768169403077,
+        "precision": 0.4230769230769231,
+        "recall": 0.9166666666666666,
+        "f1": 0.5789473684210527,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.7330860495567323,
+        "precision": 0.4074074074074074,
+        "recall": 0.9166666666666666,
+        "f1": 0.5641025641025641,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 0.7374561429023744,
+        "precision": 0.39285714285714285,
+        "recall": 0.9166666666666666,
+        "f1": 0.55,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 0.7407191395759584,
+        "precision": 0.3793103448275862,
+        "recall": 0.9166666666666666,
+        "f1": 0.5365853658536586,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.7409523129463197,
+        "precision": 0.36666666666666664,
+        "recall": 0.9166666666666666,
+        "f1": 0.5238095238095238,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.7417216300964357,
+        "precision": 0.3870967741935484,
+        "recall": 1.0,
+        "f1": 0.5581395348837209,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.7449477314949037,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 0.7507978081703187,
+        "precision": 0.36363636363636365,
+        "recall": 1.0,
+        "f1": 0.5333333333333333,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 0.7524867057800294,
+        "precision": 0.35294117647058826,
+        "recall": 1.0,
+        "f1": 0.5217391304347826,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 0.7527047395706178,
+        "precision": 0.34285714285714286,
+        "recall": 1.0,
+        "f1": 0.5106382978723404,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.7570767998695375,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 0.7572908401489259,
+        "precision": 0.32432432432432434,
+        "recall": 1.0,
+        "f1": 0.489795918367347,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.7601813077926637,
+        "precision": 0.3157894736842105,
+        "recall": 1.0,
+        "f1": 0.4799999999999999,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.762521266937256,
+        "precision": 0.3076923076923077,
+        "recall": 1.0,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.7700928449630738,
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615384615384615,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.7715088725090028,
+        "precision": 0.2926829268292683,
+        "recall": 1.0,
+        "f1": 0.45283018867924524,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 0.7722142338752748,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444445,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 0.7779905796051027,
+        "precision": 0.27906976744186046,
+        "recall": 1.0,
+        "f1": 0.43636363636363634,
+        "answered_rate": 0.3541666666666667
+      },
+      {
+        "threshold": 0.778132200241089,
+        "precision": 0.2727272727272727,
+        "recall": 1.0,
+        "f1": 0.42857142857142855,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 0.7798085212707521,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.4210526315789474,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 0.7804759740829469,
+        "precision": 0.2608695652173913,
+        "recall": 1.0,
+        "f1": 0.41379310344827586,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.7804882526397706,
+        "precision": 0.2553191489361702,
+        "recall": 1.0,
+        "f1": 0.4067796610169491,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.7812354564666749,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 0.781314790248871,
+        "precision": 0.24489795918367346,
+        "recall": 1.0,
+        "f1": 0.39344262295081966,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 0.7832220792770387,
+        "precision": 0.24,
+        "recall": 1.0,
+        "f1": 0.3870967741935484,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 0.7839367985725404,
+        "precision": 0.23529411764705882,
+        "recall": 1.0,
+        "f1": 0.38095238095238093,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 0.7862024903297425,
+        "precision": 0.23076923076923078,
+        "recall": 1.0,
+        "f1": 0.375,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 0.7938570976257325,
+        "precision": 0.22641509433962265,
+        "recall": 1.0,
+        "f1": 0.36923076923076925,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 0.7941691279411317,
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 0.7957377433776857,
+        "precision": 0.21818181818181817,
+        "recall": 1.0,
+        "f1": 0.3582089552238806,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 0.8025066852569581,
+        "precision": 0.21428571428571427,
+        "recall": 1.0,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.8102726340293885,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 0.8138674497604371,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 0.815967619419098,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 0.8412649631500245,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 8.404010250000283,
+    "ms_per_query": 8.549972873879597,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.813867449760437,
+        "top_chunk": "lipitor_atorvastatin_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7249693870544434,
+        "top_chunk": "lipitor_atorvastatin_85",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7601813077926636,
+        "top_chunk": "lipitor_atorvastatin_18",
+        "rr": 1.0
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.6937755346298218,
+        "top_chunk": "lipitor_atorvastatin_14",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7779905796051025,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.7330860495567322,
+        "top_chunk": "lipitor_atorvastatin_52",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7527047395706177,
+        "top_chunk": "metformin_laurus_88",
+        "rr": 0.5
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.802506685256958,
+        "top_chunk": "lipitor_atorvastatin_94",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7941691279411316,
+        "top_chunk": "zoloft_sertraline_9",
+        "rr": 1.0
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.779808521270752,
+        "top_chunk": "zoloft_sertraline_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7132340669631958,
+        "top_chunk": "zoloft_sertraline_70",
+        "rr": 0.5
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8412649631500244,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7957377433776855,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7449477314949036,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8159676194190979,
+        "top_chunk": "zoloft_sertraline_53",
+        "rr": 0.5
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7832220792770386,
+        "top_chunk": "zoloft_sertraline_25",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.676544189453125,
+        "top_chunk": "zestril_lisinopril_17",
+        "rr": 1.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 0.7570767998695374,
+        "top_chunk": "zestril_lisinopril_57",
+        "rr": 0.2
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": 8,
+        "confidence": 0.7524867057800293,
+        "top_chunk": "zestril_lisinopril_57",
+        "rr": 0.125
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7409523129463196,
+        "top_chunk": "zestril_lisinopril_60",
+        "rr": 0.5
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7804759740829468,
+        "top_chunk": "zestril_lisinopril_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 0.7862024903297424,
+        "top_chunk": "zestril_lisinopril_27",
+        "rr": 0.2
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7938570976257324,
+        "top_chunk": "zestril_lisinopril_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7625212669372559,
+        "top_chunk": "zestril_lisinopril_35",
+        "rr": 1.0
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.6467776298522949,
+        "top_chunk": "jantoven_warfarin_23",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7813147902488708,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7781322002410889,
+        "top_chunk": "jantoven_warfarin_13",
+        "rr": 0.5
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7407191395759583,
+        "top_chunk": "jantoven_warfarin_49",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.7280752658843994,
+        "top_chunk": "jantoven_warfarin_41",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7812354564666748,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.723361611366272,
+        "top_chunk": "jantoven_warfarin_38",
+        "rr": 1.0
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.6756287217140198,
+        "top_chunk": "jantoven_warfarin_44",
+        "rr": 0.0
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.6597700119018555,
+        "top_chunk": "metformin_laurus_6",
+        "rr": 0.5
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7145872116088867,
+        "top_chunk": "metformin_laurus_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7700928449630737,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7804882526397705,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7715088725090027,
+        "top_chunk": "metformin_laurus_35",
+        "rr": 0.5
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.725332498550415,
+        "top_chunk": "metformin_laurus_18",
+        "rr": 1.0
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8102726340293884,
+        "top_chunk": "metformin_laurus_86",
+        "rr": 1.0
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7722142338752747,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6474030017852783,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7507978081703186,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7280112504959106,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": 10,
+        "confidence": 0.6668636798858643,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.1
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6670354008674622,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7374561429023743,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7839367985725403,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7572908401489258,
+        "top_chunk": "amoxicillin_capsule_SCANNED_16",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7316768169403076,
+        "top_chunk": "metformin_laurus_8"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6859760880470276,
+        "top_chunk": "amoxicillin_capsule_SCANNED_2"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6276382803916931,
+        "top_chunk": "jantoven_warfarin_53"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6570682525634766,
+        "top_chunk": "lipitor_atorvastatin_77"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6692954897880554,
+        "top_chunk": "jantoven_warfarin_86"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.5424617528915405,
+        "top_chunk": "zoloft_sertraline_122"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.692232072353363,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6509772539138794,
+        "top_chunk": "metformin_laurus_34"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7417216300964355,
+        "top_chunk": "zestril_lisinopril_12"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6651482582092285,
+        "top_chunk": "jantoven_warfarin_33"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.44463130831718445,
+        "top_chunk": "metformin_laurus_75"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.35517823696136475,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0"
+      }
+    ]
+  },
+  {
+    "config": "hybrid-bge-small",
+    "metrics": {
+      "hit@1": 0.75,
+      "hit@3": 0.8958333333333334,
+      "hit@4": 0.9166666666666666,
+      "hit@5": 0.9375,
+      "hit@10": 0.9791666666666666,
+      "mrr@10": 0.8311342592592593,
+      "mrr@10_ci": [
+        0.7390046296296298,
+        0.9104282407407407
+      ],
+      "hit@1_ci": [
+        0.625,
+        0.875
+      ],
+      "answered_with_evidence": 0.8958333333333334,
+      "mrr_diff_vs_baseline": [
+        0.23527612433862433,
+        0.12485863095238096,
+        0.35507275132275123
+      ]
+    },
+    "abstention": {
+      "threshold": 0.7024116516113282,
+      "precision": 0.875,
+      "recall": 0.5833333333333334,
+      "f1": 0.7000000000000001,
+      "answered_rate": 0.9791666666666666,
+      "cv_f1": 0.5,
+      "auc": 0.9149305555555556
+    },
+    "pr_curve": [
+      {
+        "threshold": 0.41809237003326416,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.4180923700332642,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.48649281263351446,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.6337608098983766,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.6805105209350587,
+        "precision": 0.75,
+        "recall": 0.25,
+        "f1": 0.375,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.6981557607650758,
+        "precision": 0.8,
+        "recall": 0.3333333333333333,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.6994567513465882,
+        "precision": 0.8333333333333334,
+        "recall": 0.4166666666666667,
+        "f1": 0.5555555555555556,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.7022249698638917,
+        "precision": 0.8571428571428571,
+        "recall": 0.5,
+        "f1": 0.631578947368421,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.7024116516113282,
+        "precision": 0.875,
+        "recall": 0.5833333333333334,
+        "f1": 0.7000000000000001,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.7036589384078981,
+        "precision": 0.7777777777777778,
+        "recall": 0.5833333333333334,
+        "f1": 0.6666666666666666,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.7060202956199647,
+        "precision": 0.7,
+        "recall": 0.5833333333333334,
+        "f1": 0.6363636363636365,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.7096588015556337,
+        "precision": 0.6363636363636364,
+        "recall": 0.5833333333333334,
+        "f1": 0.6086956521739131,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.7145327329635621,
+        "precision": 0.5833333333333334,
+        "recall": 0.5833333333333334,
+        "f1": 0.5833333333333334,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.7257758378982545,
+        "precision": 0.6153846153846154,
+        "recall": 0.6666666666666666,
+        "f1": 0.64,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.732556700706482,
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7352657318115235,
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.6666666666666665,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7472573518753053,
+        "precision": 0.5625,
+        "recall": 0.75,
+        "f1": 0.6428571428571429,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.7532353401184083,
+        "precision": 0.5882352941176471,
+        "recall": 0.8333333333333334,
+        "f1": 0.6896551724137931,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.7555916309356691,
+        "precision": 0.5555555555555556,
+        "recall": 0.8333333333333334,
+        "f1": 0.6666666666666667,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.7564949989318849,
+        "precision": 0.5263157894736842,
+        "recall": 0.8333333333333334,
+        "f1": 0.6451612903225806,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.7586644887924195,
+        "precision": 0.55,
+        "recall": 0.9166666666666666,
+        "f1": 0.6874999999999999,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.7593879103660585,
+        "precision": 0.5238095238095238,
+        "recall": 0.9166666666666666,
+        "f1": 0.6666666666666667,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 0.7616414427757264,
+        "precision": 0.5,
+        "recall": 0.9166666666666666,
+        "f1": 0.6470588235294118,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.7647308111190797,
+        "precision": 0.4782608695652174,
+        "recall": 0.9166666666666666,
+        "f1": 0.6285714285714286,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 0.7667230367660524,
+        "precision": 0.4583333333333333,
+        "recall": 0.9166666666666666,
+        "f1": 0.611111111111111,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.769265115261078,
+        "precision": 0.44,
+        "recall": 0.9166666666666666,
+        "f1": 0.5945945945945945,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.7720149755477906,
+        "precision": 0.4230769230769231,
+        "recall": 0.9166666666666666,
+        "f1": 0.5789473684210527,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.7724965810775758,
+        "precision": 0.4074074074074074,
+        "recall": 0.9166666666666666,
+        "f1": 0.5641025641025641,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 0.7755331397056581,
+        "precision": 0.39285714285714285,
+        "recall": 0.9166666666666666,
+        "f1": 0.55,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 0.7773724198341371,
+        "precision": 0.3793103448275862,
+        "recall": 0.9166666666666666,
+        "f1": 0.5365853658536586,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.7832159996032716,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.7836542129516603,
+        "precision": 0.3870967741935484,
+        "recall": 1.0,
+        "f1": 0.5581395348837209,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.7879434823989869,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 0.7888054847717286,
+        "precision": 0.36363636363636365,
+        "recall": 1.0,
+        "f1": 0.5333333333333333,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 0.7891031503677369,
+        "precision": 0.35294117647058826,
+        "recall": 1.0,
+        "f1": 0.5217391304347826,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 0.7930525541305543,
+        "precision": 0.34285714285714286,
+        "recall": 1.0,
+        "f1": 0.5106382978723404,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.7952616214752198,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 0.8012824654579164,
+        "precision": 0.32432432432432434,
+        "recall": 1.0,
+        "f1": 0.489795918367347,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.8101372718811036,
+        "precision": 0.3157894736842105,
+        "recall": 1.0,
+        "f1": 0.4799999999999999,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.811835289001465,
+        "precision": 0.3076923076923077,
+        "recall": 1.0,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.816429376602173,
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615384615384615,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.8170051574707032,
+        "precision": 0.2926829268292683,
+        "recall": 1.0,
+        "f1": 0.45283018867924524,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 0.8182038068771363,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444445,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 0.8197402358055116,
+        "precision": 0.27906976744186046,
+        "recall": 1.0,
+        "f1": 0.43636363636363634,
+        "answered_rate": 0.3541666666666667
+      },
+      {
+        "threshold": 0.8202624320983888,
+        "precision": 0.2727272727272727,
+        "recall": 1.0,
+        "f1": 0.42857142857142855,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 0.821267068386078,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.4210526315789474,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 0.8218160867691041,
+        "precision": 0.2608695652173913,
+        "recall": 1.0,
+        "f1": 0.41379310344827586,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.8218677043914796,
+        "precision": 0.2553191489361702,
+        "recall": 1.0,
+        "f1": 0.4067796610169491,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.8262184858322145,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 0.8264331221580506,
+        "precision": 0.24489795918367346,
+        "recall": 1.0,
+        "f1": 0.39344262295081966,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 0.8266703486442567,
+        "precision": 0.24,
+        "recall": 1.0,
+        "f1": 0.3870967741935484,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 0.8272502422332765,
+        "precision": 0.23529411764705882,
+        "recall": 1.0,
+        "f1": 0.38095238095238093,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 0.8320686817169191,
+        "precision": 0.23076923076923078,
+        "recall": 1.0,
+        "f1": 0.375,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 0.8321805000305177,
+        "precision": 0.22641509433962265,
+        "recall": 1.0,
+        "f1": 0.36923076923076925,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 0.8338558673858644,
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 0.8361617326736451,
+        "precision": 0.21818181818181817,
+        "recall": 1.0,
+        "f1": 0.3582089552238806,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 0.8363642692565919,
+        "precision": 0.21428571428571427,
+        "recall": 1.0,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.8400760293006898,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 0.8442969322204591,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 0.852825164794922,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 0.8539003729820253,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 3.467084415955469,
+    "ms_per_query": 7.4407820085374015,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.832068681716919,
+        "top_chunk": "lipitor_atorvastatin_9",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7724965810775757,
+        "top_chunk": "lipitor_atorvastatin_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.8272502422332764,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 0.25
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7667230367660522,
+        "top_chunk": "lipitor_atorvastatin_3",
+        "rr": 1.0
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7879434823989868,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7891031503677368,
+        "top_chunk": "metformin_laurus_45",
+        "rr": 0.5
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8202624320983887,
+        "top_chunk": "lipitor_atorvastatin_99",
+        "rr": 1.0
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8170051574707031,
+        "top_chunk": "lipitor_atorvastatin_94",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.821816086769104,
+        "top_chunk": "zoloft_sertraline_2",
+        "rr": 0.5
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.7952616214752197,
+        "top_chunk": "zoloft_sertraline_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7096588015556335,
+        "top_chunk": "zoloft_sertraline_109",
+        "rr": 1.0
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8262184858322144,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8118352890014648,
+        "top_chunk": "zoloft_sertraline_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.844296932220459,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.836161732673645,
+        "top_chunk": "zoloft_sertraline_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7647308111190796,
+        "top_chunk": "zoloft_sertraline_42",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7325567007064819,
+        "top_chunk": "zestril_lisinopril_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 0.8012824654579163,
+        "top_chunk": "zestril_lisinopril_57",
+        "rr": 0.2
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": 9,
+        "confidence": 0.775533139705658,
+        "top_chunk": "zestril_lisinopril_57",
+        "rr": 0.1111111111111111
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7593879103660583,
+        "top_chunk": "zestril_lisinopril_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7930525541305542,
+        "top_chunk": "zestril_lisinopril_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.8264331221580505,
+        "top_chunk": "zestril_lisinopril_54",
+        "rr": 0.0
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8363642692565918,
+        "top_chunk": "zestril_lisinopril_12",
+        "rr": 0.5
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7472573518753052,
+        "top_chunk": "zestril_lisinopril_35",
+        "rr": 1.0
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6805105209350586,
+        "top_chunk": "jantoven_warfarin_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8101372718811035,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8182038068771362,
+        "top_chunk": "jantoven_warfarin_13",
+        "rr": 0.5
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7692651152610779,
+        "top_chunk": "jantoven_warfarin_21",
+        "rr": 1.0
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7836542129516602,
+        "top_chunk": "jantoven_warfarin_73",
+        "rr": 1.0
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8321805000305176,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7616414427757263,
+        "top_chunk": "jantoven_warfarin_38",
+        "rr": 1.0
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.714532732963562,
+        "top_chunk": "jantoven_warfarin_71",
+        "rr": 1.0
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.755591630935669,
+        "top_chunk": "metformin_laurus_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.777372419834137,
+        "top_chunk": "metformin_laurus_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8338558673858643,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8539003729820251,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8528251647949219,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7720149755477905,
+        "top_chunk": "metformin_laurus_78",
+        "rr": 1.0
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8164293766021729,
+        "top_chunk": "metformin_laurus_86",
+        "rr": 1.0
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8400760293006897,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.703658938407898,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8218677043914795,
+        "top_chunk": "amoxicillin_capsule_SCANNED_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.7888054847717285,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.7060202956199646,
+        "top_chunk": "amoxicillin_capsule_SCANNED_8",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7564949989318848,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8197402358055115,
+        "top_chunk": "amoxicillin_capsule_SCANNED_15",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8212670683860779,
+        "top_chunk": "amoxicillin_capsule_SCANNED_4",
+        "rr": 1.0
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8266703486442566,
+        "top_chunk": "amoxicillin_capsule_SCANNED_14",
+        "rr": 1.0
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7586644887924194,
+        "top_chunk": "zestril_lisinopril_11"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7024116516113281,
+        "top_chunk": "zestril_lisinopril_10"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6981557607650757,
+        "top_chunk": "metformin_laurus_45"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7352657318115234,
+        "top_chunk": "lipitor_atorvastatin_66"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7257758378982544,
+        "top_chunk": "jantoven_warfarin_74"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6337608098983765,
+        "top_chunk": "zoloft_sertraline_63"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7532353401184082,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6994567513465881,
+        "top_chunk": "metformin_laurus_75"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7832159996032715,
+        "top_chunk": "zestril_lisinopril_56"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7022249698638916,
+        "top_chunk": "jantoven_warfarin_33"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.4864928126335144,
+        "top_chunk": "metformin_laurus_79"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.41809237003326416,
+        "top_chunk": "lipitor_atorvastatin_104"
+      }
+    ]
+  },
+  {
+    "config": "hybrid-bge-small+rerank",
+    "metrics": {
+      "hit@1": 0.6458333333333334,
+      "hit@3": 0.8333333333333334,
+      "hit@4": 0.8541666666666666,
+      "hit@5": 0.8958333333333334,
+      "hit@10": 0.9375,
+      "mrr@10": 0.7565972222222223,
+      "mrr@10_ci": [
+        0.6548611111111112,
+        0.8503472222222221
+      ],
+      "hit@1_ci": [
+        0.5,
+        0.7708333333333334
+      ],
+      "answered_with_evidence": 0.75,
+      "mrr_diff_vs_baseline": [
+        0.16073908730158729,
+        0.046005704365079364,
+        0.2784802827380951
+      ]
+    },
+    "abstention": {
+      "threshold": 0.7031325697898866,
+      "precision": 0.5833333333333334,
+      "recall": 0.5833333333333334,
+      "f1": 0.5833333333333334,
+      "answered_rate": 0.8958333333333334,
+      "cv_f1": 0.4761904761904762,
+      "auc": 0.7829861111111112
+    },
+    "pr_curve": [
+      {
+        "threshold": 3.7447487557074055e-05,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 3.744748755707406e-05,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.015610935166478159,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.03327226266264916,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.05674723535776139,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.17443163692951205,
+        "precision": 0.8,
+        "recall": 0.3333333333333333,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.3143588304519654,
+        "precision": 0.8333333333333334,
+        "recall": 0.4166666666666667,
+        "f1": 0.5555555555555556,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.3269157707691193,
+        "precision": 0.7142857142857143,
+        "recall": 0.4166666666666667,
+        "f1": 0.5263157894736842,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.4903023838996888,
+        "precision": 0.625,
+        "recall": 0.4166666666666667,
+        "f1": 0.5,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.5280893445014955,
+        "precision": 0.5555555555555556,
+        "recall": 0.4166666666666667,
+        "f1": 0.4761904761904762,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.6687558889389039,
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1": 0.5454545454545454,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.6993913650512696,
+        "precision": 0.5454545454545454,
+        "recall": 0.5,
+        "f1": 0.5217391304347826,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.7031325697898866,
+        "precision": 0.5833333333333334,
+        "recall": 0.5833333333333334,
+        "f1": 0.5833333333333334,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.7145327925682069,
+        "precision": 0.5384615384615384,
+        "recall": 0.5833333333333334,
+        "f1": 0.5599999999999999,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7788859009742738,
+        "precision": 0.5,
+        "recall": 0.5833333333333334,
+        "f1": 0.5384615384615384,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.8291035890579225,
+        "precision": 0.4666666666666667,
+        "recall": 0.5833333333333334,
+        "f1": 0.5185185185185186,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.8310794234275819,
+        "precision": 0.4375,
+        "recall": 0.5833333333333334,
+        "f1": 0.5,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.8601912260055543,
+        "precision": 0.4117647058823529,
+        "recall": 0.5833333333333334,
+        "f1": 0.4827586206896552,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 0.8862021565437318,
+        "precision": 0.3888888888888889,
+        "recall": 0.5833333333333334,
+        "f1": 0.4666666666666666,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.899144470691681,
+        "precision": 0.3684210526315789,
+        "recall": 0.5833333333333334,
+        "f1": 0.4516129032258065,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 0.9188527464866639,
+        "precision": 0.35,
+        "recall": 0.5833333333333334,
+        "f1": 0.4375,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.9275601506233216,
+        "precision": 0.3333333333333333,
+        "recall": 0.5833333333333334,
+        "f1": 0.4242424242424242,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.936493217945099,
+        "precision": 0.36363636363636365,
+        "recall": 0.6666666666666666,
+        "f1": 0.4705882352941177,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.9373105764389039,
+        "precision": 0.34782608695652173,
+        "recall": 0.6666666666666666,
+        "f1": 0.4571428571428571,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.9393200278282167,
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "f1": 0.4444444444444444,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 0.9472130537033082,
+        "precision": 0.32,
+        "recall": 0.6666666666666666,
+        "f1": 0.43243243243243246,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 0.9529635906219484,
+        "precision": 0.3076923076923077,
+        "recall": 0.6666666666666666,
+        "f1": 0.42105263157894735,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.9634402990341188,
+        "precision": 0.2962962962962963,
+        "recall": 0.6666666666666666,
+        "f1": 0.41025641025641024,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.9634657502174379,
+        "precision": 0.2857142857142857,
+        "recall": 0.6666666666666666,
+        "f1": 0.4,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 0.9671689271926881,
+        "precision": 0.27586206896551724,
+        "recall": 0.6666666666666666,
+        "f1": 0.3902439024390244,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 0.9681637287139894,
+        "precision": 0.26666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.3809523809523809,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 0.9728037118911744,
+        "precision": 0.25806451612903225,
+        "recall": 0.6666666666666666,
+        "f1": 0.37209302325581395,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.9744417071342469,
+        "precision": 0.28125,
+        "recall": 0.75,
+        "f1": 0.4090909090909091,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.9801045656204225,
+        "precision": 0.2727272727272727,
+        "recall": 0.75,
+        "f1": 0.39999999999999997,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 0.9834123849868776,
+        "precision": 0.2647058823529412,
+        "recall": 0.75,
+        "f1": 0.39130434782608703,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.9853506088256837,
+        "precision": 0.2857142857142857,
+        "recall": 0.8333333333333334,
+        "f1": 0.42553191489361697,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.9869502186775209,
+        "precision": 0.2777777777777778,
+        "recall": 0.8333333333333334,
+        "f1": 0.4166666666666667,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.9884523749351503,
+        "precision": 0.2972972972972973,
+        "recall": 0.9166666666666666,
+        "f1": 0.4489795918367347,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.9899095296859742,
+        "precision": 0.2894736842105263,
+        "recall": 0.9166666666666666,
+        "f1": 0.43999999999999995,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.9910810589790345,
+        "precision": 0.3076923076923077,
+        "recall": 1.0,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.9917200803756715,
+        "precision": 0.3,
+        "recall": 1.0,
+        "f1": 0.4615384615384615,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.9949814677238465,
+        "precision": 0.2926829268292683,
+        "recall": 1.0,
+        "f1": 0.45283018867924524,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 0.995153307914734,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444445,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 0.9960379600524903,
+        "precision": 0.27906976744186046,
+        "recall": 1.0,
+        "f1": 0.43636363636363634,
+        "answered_rate": 0.3541666666666667
+      },
+      {
+        "threshold": 0.9962855577468873,
+        "precision": 0.2727272727272727,
+        "recall": 1.0,
+        "f1": 0.42857142857142855,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 0.9963784813880922,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.4210526315789474,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 0.996781349182129,
+        "precision": 0.2608695652173913,
+        "recall": 1.0,
+        "f1": 0.41379310344827586,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.9970893263816835,
+        "precision": 0.2553191489361702,
+        "recall": 1.0,
+        "f1": 0.4067796610169491,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.9979346990585328,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 0.9986112117767335,
+        "precision": 0.24489795918367346,
+        "recall": 1.0,
+        "f1": 0.39344262295081966,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 0.9986977577209474,
+        "precision": 0.24,
+        "recall": 1.0,
+        "f1": 0.3870967741935484,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 0.9987210631370546,
+        "precision": 0.23529411764705882,
+        "recall": 1.0,
+        "f1": 0.38095238095238093,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 0.9991174340248109,
+        "precision": 0.23076923076923078,
+        "recall": 1.0,
+        "f1": 0.375,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 0.9994726777076722,
+        "precision": 0.22641509433962265,
+        "recall": 1.0,
+        "f1": 0.36923076923076925,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 0.9995063543319703,
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 0.999539613723755,
+        "precision": 0.21818181818181817,
+        "recall": 1.0,
+        "f1": 0.3582089552238806,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 0.9995630383491517,
+        "precision": 0.21428571428571427,
+        "recall": 1.0,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.9996514320373536,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 0.9997605681419374,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 0.9998896121978761,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 0.9999665021896363,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 3.3368383339839056,
+    "ms_per_query": 649.1561875115925,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9997605681419373,
+        "top_chunk": "lipitor_atorvastatin_66",
+        "rr": 0.5
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.9869502186775208,
+        "top_chunk": "zestril_lisinopril_15",
+        "rr": 0.0
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9188527464866638,
+        "top_chunk": "lipitor_atorvastatin_18",
+        "rr": 1.0
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.9999665021896362,
+        "top_chunk": "lipitor_atorvastatin_28",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9960379600524902,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.32691577076911926,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 0.5
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9991174340248108,
+        "top_chunk": "lipitor_atorvastatin_99",
+        "rr": 1.0
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995063543319702,
+        "top_chunk": "lipitor_atorvastatin_43",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.9986112117767334,
+        "top_chunk": "zoloft_sertraline_8",
+        "rr": 0.25
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9634402990341187,
+        "top_chunk": "zoloft_sertraline_109",
+        "rr": 1.0
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.967168927192688,
+        "top_chunk": "zoloft_sertraline_109",
+        "rr": 1.0
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9951533079147339,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995396137237549,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9949814677238464,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9987210631370544,
+        "top_chunk": "zoloft_sertraline_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9967813491821289,
+        "top_chunk": "zoloft_sertraline_6",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9275601506233215,
+        "top_chunk": "zestril_lisinopril_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9899095296859741,
+        "top_chunk": "zoloft_sertraline_8",
+        "rr": 0.5
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.4903023838996887,
+        "top_chunk": "zestril_lisinopril_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6993913650512695,
+        "top_chunk": "zestril_lisinopril_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8601912260055542,
+        "top_chunk": "zestril_lisinopril_15",
+        "rr": 1.0
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.9529635906219482,
+        "top_chunk": "zestril_lisinopril_64",
+        "rr": 0.0
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 0.9970893263816833,
+        "top_chunk": "zestril_lisinopril_15",
+        "rr": 0.2
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.17443163692951202,
+        "top_chunk": "zestril_lisinopril_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8862021565437317,
+        "top_chunk": "jantoven_warfarin_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995630383491516,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9472130537033081,
+        "top_chunk": "jantoven_warfarin_13",
+        "rr": 0.5
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9962855577468872,
+        "top_chunk": "jantoven_warfarin_22",
+        "rr": 1.0
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 6,
+        "confidence": 0.9996514320373535,
+        "top_chunk": "jantoven_warfarin_71",
+        "rr": 0.16666666666666666
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.996378481388092,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9393200278282166,
+        "top_chunk": "jantoven_warfarin_38",
+        "rr": 1.0
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7788859009742737,
+        "top_chunk": "jantoven_warfarin_71",
+        "rr": 1.0
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9373105764389038,
+        "top_chunk": "metformin_laurus_1",
+        "rr": 0.5
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8310794234275818,
+        "top_chunk": "metformin_laurus_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9728037118911743,
+        "top_chunk": "metformin_laurus_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9801045656204224,
+        "top_chunk": "metformin_laurus_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9834123849868774,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8291035890579224,
+        "top_chunk": "metformin_laurus_6",
+        "rr": 0.5
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.999889612197876,
+        "top_chunk": "metformin_laurus_6",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9986977577209473,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.5280893445014954,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 0.9994726777076721,
+        "top_chunk": "zestril_lisinopril_2",
+        "rr": 0.2
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9634657502174377,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10",
+        "rr": 0.5
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.9979346990585327,
+        "top_chunk": "jantoven_warfarin_73",
+        "rr": 0.0
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7145327925682068,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9917200803756714,
+        "top_chunk": "amoxicillin_capsule_SCANNED_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8991444706916809,
+        "top_chunk": "jantoven_warfarin_71",
+        "rr": 0.5
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9681637287139893,
+        "top_chunk": "amoxicillin_capsule_SCANNED_14",
+        "rr": 1.0
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9853506088256836,
+        "top_chunk": "jantoven_warfarin_14"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9910810589790344,
+        "top_chunk": "zestril_lisinopril_2"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9744417071342468,
+        "top_chunk": "zestril_lisinopril_15"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.05674723535776138,
+        "top_chunk": "lipitor_atorvastatin_99"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6687558889389038,
+        "top_chunk": "jantoven_warfarin_86"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.015610935166478157,
+        "top_chunk": "zoloft_sertraline_128"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7031325697898865,
+        "top_chunk": "amoxicillin_capsule_SCANNED_12"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.31435883045196533,
+        "top_chunk": "metformin_laurus_4"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9884523749351501,
+        "top_chunk": "zestril_lisinopril_15"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9364932179450989,
+        "top_chunk": "jantoven_warfarin_51"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 3.7447487557074055e-05,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.033272262662649155,
+        "top_chunk": "lipitor_atorvastatin_104"
+      }
+    ]
+  },
+  {
+    "config": "hybrid-bge-base+rerank",
+    "metrics": {
+      "hit@1": 0.6458333333333334,
+      "hit@3": 0.8541666666666666,
+      "hit@4": 0.9166666666666666,
+      "hit@5": 0.9375,
+      "hit@10": 0.9375,
+      "mrr@10": 0.7628472222222221,
+      "mrr@10_ci": [
+        0.6638888888888889,
+        0.8548611111111111
+      ],
+      "hit@1_ci": [
+        0.5,
+        0.7708333333333334
+      ],
+      "answered_with_evidence": 0.7916666666666666,
+      "mrr_diff_vs_baseline": [
+        0.16698908730158732,
+        0.04823474702380953,
+        0.2859157986111111
+      ]
+    },
+    "abstention": {
+      "threshold": 0.7031325697898866,
+      "precision": 0.5384615384615384,
+      "recall": 0.5833333333333334,
+      "f1": 0.5599999999999999,
+      "answered_rate": 0.875,
+      "cv_f1": 0.45454545454545453,
+      "auc": 0.7256944444444444
+    },
+    "pr_curve": [
+      {
+        "threshold": 3.744505738723092e-05,
+        "precision": 1.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 3.7445057387230925e-05,
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 9.767822484718637e-05,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.015610935166478159,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "answered_rate": 1.0
+      },
+      {
+        "threshold": 0.17443163692951205,
+        "precision": 0.75,
+        "recall": 0.25,
+        "f1": 0.375,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.3143588304519654,
+        "precision": 0.8,
+        "recall": 0.3333333333333333,
+        "f1": 0.47058823529411764,
+        "answered_rate": 0.9791666666666666
+      },
+      {
+        "threshold": 0.3269157707691193,
+        "precision": 0.6666666666666666,
+        "recall": 0.3333333333333333,
+        "f1": 0.4444444444444444,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.4119508266448975,
+        "precision": 0.7142857142857143,
+        "recall": 0.4166666666666667,
+        "f1": 0.5263157894736842,
+        "answered_rate": 0.9583333333333334
+      },
+      {
+        "threshold": 0.45570349693298345,
+        "precision": 0.625,
+        "recall": 0.4166666666666667,
+        "f1": 0.5,
+        "answered_rate": 0.9375
+      },
+      {
+        "threshold": 0.4903023838996888,
+        "precision": 0.5555555555555556,
+        "recall": 0.4166666666666667,
+        "f1": 0.4761904761904762,
+        "answered_rate": 0.9166666666666666
+      },
+      {
+        "threshold": 0.5280893445014955,
+        "precision": 0.5,
+        "recall": 0.4166666666666667,
+        "f1": 0.45454545454545453,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.6687558889389039,
+        "precision": 0.5454545454545454,
+        "recall": 0.5,
+        "f1": 0.5217391304347826,
+        "answered_rate": 0.8958333333333334
+      },
+      {
+        "threshold": 0.6993913650512696,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7031325697898866,
+        "precision": 0.5384615384615384,
+        "recall": 0.5833333333333334,
+        "f1": 0.5599999999999999,
+        "answered_rate": 0.875
+      },
+      {
+        "threshold": 0.7145327925682069,
+        "precision": 0.5,
+        "recall": 0.5833333333333334,
+        "f1": 0.5384615384615384,
+        "answered_rate": 0.8541666666666666
+      },
+      {
+        "threshold": 0.8291035890579225,
+        "precision": 0.4666666666666667,
+        "recall": 0.5833333333333334,
+        "f1": 0.5185185185185186,
+        "answered_rate": 0.8333333333333334
+      },
+      {
+        "threshold": 0.8310794234275819,
+        "precision": 0.4375,
+        "recall": 0.5833333333333334,
+        "f1": 0.5,
+        "answered_rate": 0.8125
+      },
+      {
+        "threshold": 0.8507490158081056,
+        "precision": 0.4117647058823529,
+        "recall": 0.5833333333333334,
+        "f1": 0.4827586206896552,
+        "answered_rate": 0.7916666666666666
+      },
+      {
+        "threshold": 0.8601912260055543,
+        "precision": 0.3888888888888889,
+        "recall": 0.5833333333333334,
+        "f1": 0.4666666666666666,
+        "answered_rate": 0.7708333333333334
+      },
+      {
+        "threshold": 0.8862021565437318,
+        "precision": 0.3684210526315789,
+        "recall": 0.5833333333333334,
+        "f1": 0.4516129032258065,
+        "answered_rate": 0.75
+      },
+      {
+        "threshold": 0.899144470691681,
+        "precision": 0.35,
+        "recall": 0.5833333333333334,
+        "f1": 0.4375,
+        "answered_rate": 0.7291666666666666
+      },
+      {
+        "threshold": 0.9188527464866639,
+        "precision": 0.3333333333333333,
+        "recall": 0.5833333333333334,
+        "f1": 0.4242424242424242,
+        "answered_rate": 0.7083333333333334
+      },
+      {
+        "threshold": 0.9275601506233216,
+        "precision": 0.3181818181818182,
+        "recall": 0.5833333333333334,
+        "f1": 0.4117647058823529,
+        "answered_rate": 0.6875
+      },
+      {
+        "threshold": 0.9373105764389039,
+        "precision": 0.30434782608695654,
+        "recall": 0.5833333333333334,
+        "f1": 0.4,
+        "answered_rate": 0.6666666666666666
+      },
+      {
+        "threshold": 0.9393200278282167,
+        "precision": 0.2916666666666667,
+        "recall": 0.5833333333333334,
+        "f1": 0.38888888888888895,
+        "answered_rate": 0.6458333333333334
+      },
+      {
+        "threshold": 0.9472130537033082,
+        "precision": 0.28,
+        "recall": 0.5833333333333334,
+        "f1": 0.3783783783783784,
+        "answered_rate": 0.625
+      },
+      {
+        "threshold": 0.9529635906219484,
+        "precision": 0.2692307692307692,
+        "recall": 0.5833333333333334,
+        "f1": 0.3684210526315789,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.9621347188949586,
+        "precision": 0.2962962962962963,
+        "recall": 0.6666666666666666,
+        "f1": 0.41025641025641024,
+        "answered_rate": 0.6041666666666666
+      },
+      {
+        "threshold": 0.9634402990341188,
+        "precision": 0.2857142857142857,
+        "recall": 0.6666666666666666,
+        "f1": 0.4,
+        "answered_rate": 0.5833333333333334
+      },
+      {
+        "threshold": 0.9634657502174379,
+        "precision": 0.27586206896551724,
+        "recall": 0.6666666666666666,
+        "f1": 0.3902439024390244,
+        "answered_rate": 0.5625
+      },
+      {
+        "threshold": 0.9671689271926881,
+        "precision": 0.26666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.3809523809523809,
+        "answered_rate": 0.5416666666666666
+      },
+      {
+        "threshold": 0.9681637287139894,
+        "precision": 0.25806451612903225,
+        "recall": 0.6666666666666666,
+        "f1": 0.37209302325581395,
+        "answered_rate": 0.5208333333333334
+      },
+      {
+        "threshold": 0.9728037118911744,
+        "precision": 0.25,
+        "recall": 0.6666666666666666,
+        "f1": 0.36363636363636365,
+        "answered_rate": 0.5
+      },
+      {
+        "threshold": 0.9801045656204225,
+        "precision": 0.24242424242424243,
+        "recall": 0.6666666666666666,
+        "f1": 0.3555555555555555,
+        "answered_rate": 0.4791666666666667
+      },
+      {
+        "threshold": 0.9834123849868776,
+        "precision": 0.23529411764705882,
+        "recall": 0.6666666666666666,
+        "f1": 0.3478260869565218,
+        "answered_rate": 0.4583333333333333
+      },
+      {
+        "threshold": 0.9869502186775209,
+        "precision": 0.22857142857142856,
+        "recall": 0.6666666666666666,
+        "f1": 0.3404255319148936,
+        "answered_rate": 0.4375
+      },
+      {
+        "threshold": 0.9884344339370729,
+        "precision": 0.2222222222222222,
+        "recall": 0.6666666666666666,
+        "f1": 0.3333333333333333,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.9884523749351503,
+        "precision": 0.24324324324324326,
+        "recall": 0.75,
+        "f1": 0.3673469387755103,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.9908885955810548,
+        "precision": 0.2631578947368421,
+        "recall": 0.8333333333333334,
+        "f1": 0.39999999999999997,
+        "answered_rate": 0.4166666666666667
+      },
+      {
+        "threshold": 0.9917200803756715,
+        "precision": 0.2564102564102564,
+        "recall": 0.8333333333333334,
+        "f1": 0.392156862745098,
+        "answered_rate": 0.3958333333333333
+      },
+      {
+        "threshold": 0.9949814677238465,
+        "precision": 0.25,
+        "recall": 0.8333333333333334,
+        "f1": 0.3846153846153846,
+        "answered_rate": 0.375
+      },
+      {
+        "threshold": 0.995153307914734,
+        "precision": 0.24390243902439024,
+        "recall": 0.8333333333333334,
+        "f1": 0.37735849056603776,
+        "answered_rate": 0.3541666666666667
+      },
+      {
+        "threshold": 0.9958468079566957,
+        "precision": 0.23809523809523808,
+        "recall": 0.8333333333333334,
+        "f1": 0.37037037037037035,
+        "answered_rate": 0.3333333333333333
+      },
+      {
+        "threshold": 0.9960379600524903,
+        "precision": 0.23255813953488372,
+        "recall": 0.8333333333333334,
+        "f1": 0.3636363636363636,
+        "answered_rate": 0.3125
+      },
+      {
+        "threshold": 0.9963784813880922,
+        "precision": 0.22727272727272727,
+        "recall": 0.8333333333333334,
+        "f1": 0.35714285714285715,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.9964264035224916,
+        "precision": 0.24444444444444444,
+        "recall": 0.9166666666666666,
+        "f1": 0.3859649122807018,
+        "answered_rate": 0.2916666666666667
+      },
+      {
+        "threshold": 0.9965434670448304,
+        "precision": 0.2391304347826087,
+        "recall": 0.9166666666666666,
+        "f1": 0.3793103448275862,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.9967454671859742,
+        "precision": 0.2553191489361702,
+        "recall": 1.0,
+        "f1": 0.4067796610169491,
+        "answered_rate": 0.2708333333333333
+      },
+      {
+        "threshold": 0.996781349182129,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "answered_rate": 0.25
+      },
+      {
+        "threshold": 0.9979346990585328,
+        "precision": 0.24489795918367346,
+        "recall": 1.0,
+        "f1": 0.39344262295081966,
+        "answered_rate": 0.22916666666666666
+      },
+      {
+        "threshold": 0.9979559183120729,
+        "precision": 0.24,
+        "recall": 1.0,
+        "f1": 0.3870967741935484,
+        "answered_rate": 0.20833333333333334
+      },
+      {
+        "threshold": 0.9986112117767335,
+        "precision": 0.23529411764705882,
+        "recall": 1.0,
+        "f1": 0.38095238095238093,
+        "answered_rate": 0.1875
+      },
+      {
+        "threshold": 0.9986977577209474,
+        "precision": 0.23076923076923078,
+        "recall": 1.0,
+        "f1": 0.375,
+        "answered_rate": 0.16666666666666666
+      },
+      {
+        "threshold": 0.9987210631370546,
+        "precision": 0.22641509433962265,
+        "recall": 1.0,
+        "f1": 0.36923076923076925,
+        "answered_rate": 0.14583333333333334
+      },
+      {
+        "threshold": 0.9991174340248109,
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1": 0.3636363636363636,
+        "answered_rate": 0.125
+      },
+      {
+        "threshold": 0.9995063543319703,
+        "precision": 0.21818181818181817,
+        "recall": 1.0,
+        "f1": 0.3582089552238806,
+        "answered_rate": 0.10416666666666667
+      },
+      {
+        "threshold": 0.9995287656784059,
+        "precision": 0.21428571428571427,
+        "recall": 1.0,
+        "f1": 0.35294117647058826,
+        "answered_rate": 0.08333333333333333
+      },
+      {
+        "threshold": 0.999539613723755,
+        "precision": 0.21052631578947367,
+        "recall": 1.0,
+        "f1": 0.34782608695652173,
+        "answered_rate": 0.0625
+      },
+      {
+        "threshold": 0.9995630383491517,
+        "precision": 0.20689655172413793,
+        "recall": 1.0,
+        "f1": 0.34285714285714286,
+        "answered_rate": 0.041666666666666664
+      },
+      {
+        "threshold": 0.9996514320373536,
+        "precision": 0.2033898305084746,
+        "recall": 1.0,
+        "f1": 0.33802816901408456,
+        "answered_rate": 0.020833333333333332
+      },
+      {
+        "threshold": 0.9999665021896363,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "answered_rate": 0.0
+      }
+    ],
+    "index_seconds": 9.06896629196126,
+    "ms_per_query": 644.6661249947889,
+    "per_question": [
+      {
+        "id": "q01",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995287656784058,
+        "top_chunk": "lipitor_atorvastatin_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q02",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.9869502186775208,
+        "top_chunk": "zestril_lisinopril_15",
+        "rr": 0.0
+      },
+      {
+        "id": "q03",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9188527464866638,
+        "top_chunk": "lipitor_atorvastatin_18",
+        "rr": 1.0
+      },
+      {
+        "id": "q04",
+        "answerable": true,
+        "rank": 5,
+        "confidence": 0.9999665021896362,
+        "top_chunk": "lipitor_atorvastatin_28",
+        "rr": 0.2
+      },
+      {
+        "id": "q05",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9960379600524902,
+        "top_chunk": "lipitor_atorvastatin_98",
+        "rr": 1.0
+      },
+      {
+        "id": "q06",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.32691577076911926,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q07",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9991174340248108,
+        "top_chunk": "lipitor_atorvastatin_99",
+        "rr": 1.0
+      },
+      {
+        "id": "q08",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995063543319702,
+        "top_chunk": "lipitor_atorvastatin_43",
+        "rr": 1.0
+      },
+      {
+        "id": "q09",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.9986112117767334,
+        "top_chunk": "zoloft_sertraline_8",
+        "rr": 0.25
+      },
+      {
+        "id": "q10",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9634402990341187,
+        "top_chunk": "zoloft_sertraline_109",
+        "rr": 1.0
+      },
+      {
+        "id": "q11",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.967168927192688,
+        "top_chunk": "zoloft_sertraline_109",
+        "rr": 1.0
+      },
+      {
+        "id": "q12",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9951533079147339,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q13",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995396137237549,
+        "top_chunk": "zoloft_sertraline_123",
+        "rr": 1.0
+      },
+      {
+        "id": "q14",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9949814677238464,
+        "top_chunk": "zoloft_sertraline_64",
+        "rr": 1.0
+      },
+      {
+        "id": "q15",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9987210631370544,
+        "top_chunk": "zoloft_sertraline_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q16",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9967813491821289,
+        "top_chunk": "zoloft_sertraline_6",
+        "rr": 1.0
+      },
+      {
+        "id": "q17",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9275601506233215,
+        "top_chunk": "zestril_lisinopril_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q18",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8507490158081055,
+        "top_chunk": "zestril_lisinopril_12",
+        "rr": 1.0
+      },
+      {
+        "id": "q19",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.4903023838996887,
+        "top_chunk": "zestril_lisinopril_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q20",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.6993913650512695,
+        "top_chunk": "zestril_lisinopril_16",
+        "rr": 1.0
+      },
+      {
+        "id": "q21",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8601912260055542,
+        "top_chunk": "zestril_lisinopril_15",
+        "rr": 1.0
+      },
+      {
+        "id": "q22",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.9529635906219482,
+        "top_chunk": "zestril_lisinopril_64",
+        "rr": 0.0
+      },
+      {
+        "id": "q23",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.9965434670448303,
+        "top_chunk": "zestril_lisinopril_12",
+        "rr": 0.25
+      },
+      {
+        "id": "q24",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.17443163692951202,
+        "top_chunk": "zestril_lisinopril_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q25",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8862021565437317,
+        "top_chunk": "jantoven_warfarin_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q26",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9995630383491516,
+        "top_chunk": "jantoven_warfarin_10",
+        "rr": 1.0
+      },
+      {
+        "id": "q27",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9472130537033081,
+        "top_chunk": "jantoven_warfarin_13",
+        "rr": 0.5
+      },
+      {
+        "id": "q28",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9979559183120728,
+        "top_chunk": "jantoven_warfarin_49",
+        "rr": 0.5
+      },
+      {
+        "id": "q29",
+        "answerable": true,
+        "rank": 3,
+        "confidence": 0.9996514320373535,
+        "top_chunk": "jantoven_warfarin_71",
+        "rr": 0.3333333333333333
+      },
+      {
+        "id": "q30",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.996378481388092,
+        "top_chunk": "jantoven_warfarin_53",
+        "rr": 1.0
+      },
+      {
+        "id": "q31",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9393200278282166,
+        "top_chunk": "jantoven_warfarin_38",
+        "rr": 1.0
+      },
+      {
+        "id": "q32",
+        "answerable": true,
+        "rank": 4,
+        "confidence": 0.4557034969329834,
+        "top_chunk": "jantoven_warfarin_44",
+        "rr": 0.25
+      },
+      {
+        "id": "q33",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9373105764389038,
+        "top_chunk": "metformin_laurus_1",
+        "rr": 0.5
+      },
+      {
+        "id": "q34",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.8310794234275818,
+        "top_chunk": "metformin_laurus_36",
+        "rr": 1.0
+      },
+      {
+        "id": "q35",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9728037118911743,
+        "top_chunk": "metformin_laurus_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q36",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9801045656204224,
+        "top_chunk": "metformin_laurus_1",
+        "rr": 1.0
+      },
+      {
+        "id": "q37",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9834123849868774,
+        "top_chunk": "metformin_laurus_8",
+        "rr": 1.0
+      },
+      {
+        "id": "q38",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8291035890579224,
+        "top_chunk": "metformin_laurus_6",
+        "rr": 0.5
+      },
+      {
+        "id": "q39",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9958468079566956,
+        "top_chunk": "metformin_laurus_74",
+        "rr": 0.5
+      },
+      {
+        "id": "q40",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9986977577209473,
+        "top_chunk": "metformin_laurus_81",
+        "rr": 1.0
+      },
+      {
+        "id": "q41",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.5280893445014954,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q42",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9884344339370728,
+        "top_chunk": "lipitor_atorvastatin_3",
+        "rr": 0.5
+      },
+      {
+        "id": "q43",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.9634657502174377,
+        "top_chunk": "amoxicillin_capsule_SCANNED_10",
+        "rr": 0.5
+      },
+      {
+        "id": "q44",
+        "answerable": true,
+        "rank": null,
+        "confidence": 0.9979346990585327,
+        "top_chunk": "jantoven_warfarin_73",
+        "rr": 0.0
+      },
+      {
+        "id": "q45",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.7145327925682068,
+        "top_chunk": "amoxicillin_capsule_SCANNED_0",
+        "rr": 1.0
+      },
+      {
+        "id": "q46",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9917200803756714,
+        "top_chunk": "amoxicillin_capsule_SCANNED_2",
+        "rr": 1.0
+      },
+      {
+        "id": "q47",
+        "answerable": true,
+        "rank": 2,
+        "confidence": 0.8991444706916809,
+        "top_chunk": "jantoven_warfarin_71",
+        "rr": 0.5
+      },
+      {
+        "id": "q48",
+        "answerable": true,
+        "rank": 1,
+        "confidence": 0.9681637287139893,
+        "top_chunk": "amoxicillin_capsule_SCANNED_14",
+        "rr": 1.0
+      },
+      {
+        "id": "q49",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9621347188949585,
+        "top_chunk": "metformin_laurus_47"
+      },
+      {
+        "id": "q50",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9967454671859741,
+        "top_chunk": "jantoven_warfarin_14"
+      },
+      {
+        "id": "q51",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9908885955810547,
+        "top_chunk": "jantoven_warfarin_51"
+      },
+      {
+        "id": "q52",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.41195082664489746,
+        "top_chunk": "lipitor_atorvastatin_3"
+      },
+      {
+        "id": "q53",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.6687558889389038,
+        "top_chunk": "jantoven_warfarin_86"
+      },
+      {
+        "id": "q54",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.015610935166478157,
+        "top_chunk": "zoloft_sertraline_128"
+      },
+      {
+        "id": "q55",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.7031325697898865,
+        "top_chunk": "amoxicillin_capsule_SCANNED_12"
+      },
+      {
+        "id": "q56",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.31435883045196533,
+        "top_chunk": "metformin_laurus_4"
+      },
+      {
+        "id": "q57",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9884523749351501,
+        "top_chunk": "zestril_lisinopril_15"
+      },
+      {
+        "id": "q58",
+        "answerable": false,
+        "rank": null,
+        "confidence": 0.9964264035224915,
+        "top_chunk": "jantoven_warfarin_56"
+      },
+      {
+        "id": "q59",
+        "answerable": false,
+        "rank": null,
+        "confidence": 3.744505738723092e-05,
+        "top_chunk": "metformin_laurus_7"
+      },
+      {
+        "id": "q60",
+        "answerable": false,
+        "rank": null,
+        "confidence": 9.767822484718636e-05,
+        "top_chunk": "jantoven_warfarin_62"
+      }
+    ]
+  }
+]

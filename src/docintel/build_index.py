@@ -21,7 +21,7 @@ Input:  data/chunks/*.chunks.json
 Output: data/index/{faiss.index, metadata.json, manifest.json}
 
 Run:
-    python -m docintel.build_index [--config hybrid-bge-small+rerank]
+    python -m docintel.build_index [--config hybrid-bge-small]
 """
 
 import argparse

@@ -4,7 +4,7 @@ ranks highest, with scores. Useful for checking retrieval on its own -
 if the right chunk isn't near the top here, no prompt will fix the answer.
 
 Run:
-    python -m docintel.search [--config hybrid-bge-small+rerank] [--top-k 5]
+    python -m docintel.search [--config hybrid-bge-small] [--top-k 5]
 """
 
 import argparse

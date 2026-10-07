@@ -2,7 +2,7 @@
 Run the whole indexing pipeline in one go: parse -> chunk -> embed + index.
 
 Run:
-    python -m docintel.pipeline [--pdf-dir data/raw_pdfs] [--config hybrid-bge-small+rerank]
+    python -m docintel.pipeline [--pdf-dir data/raw_pdfs] [--config hybrid-bge-small]
 """
 
 import argparse

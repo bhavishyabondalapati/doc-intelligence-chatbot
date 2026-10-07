@@ -21,7 +21,7 @@ Setup:
      it's already listed in .gitignore)
 
 Run:
-    python -m docintel.chat [--config hybrid-bge-small+rerank] [--threshold 0.1]
+    python -m docintel.chat [--config hybrid-bge-small] [--threshold 0.702]
 """
 
 import argparse
@@ -31,16 +31,23 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from docintel.config import INDEX_DIR
+from docintel.config import INDEX_DIR, PROJECT_ROOT
 from docintel.retrieval import DEFAULT_CONFIG, RETRIEVER_CONFIGS
 from docintel.search import load_retriever
 
-CHAT_MODEL = "gemini-2.5-flash"  # pinned (not "-latest") so answers are reproducible
+CHAT_MODEL = "gemini-3.8-flash"  # pinned (not "-latest") so answers are reproducible
 TOP_K = 4
 
-# Abstention thresholds per retrieval config, picked by eval/run_eval.py
-# (max F1 for "should abstain" on the eval set; see eval/results/).
-ABSTAIN_THRESHOLDS = {}
+# Abstention thresholds per retrieval config, picked by eval/run_eval.py as
+# the best-F1 point on the precision-recall curve (eval/results/). On the
+# eval set, 0.702 for the default config abstained on 7/12 unanswerable
+# questions (87.5% precision) while still answering 47/48 answerable ones.
+# They are calibrated on drug labels: re-run the eval on your own documents.
+ABSTAIN_THRESHOLDS = {
+    "hybrid-bge-small": 0.702,
+    "dense-bge-small": 0.702,
+    "baseline-minilm": 0.629,
+}
 
 SYSTEM_PROMPT = """You are a helpful assistant that answers questions using \
 ONLY the context provided below. If the context does not contain enough \
@@ -90,7 +97,7 @@ def format_sources(chunks, hits):
         box = region.get("bbox")
         where = f", bbox=({box['x0']:.0f},{box['y0']:.0f},{box['x1']:.0f},{box['y1']:.0f})" if box else ""
         lines.append(f"  - {chunk['source_file']} p.{chunk['page_start']}-{chunk['page_end']}"
-                     f"{where} [score={score:.3f}]")
+                     f"{where} [rank score={score:.3f}]")
     return "\n".join(lines)
 
 
@@ -102,7 +109,7 @@ def main():
                         help="Abstain below this retrieval confidence (default: eval-picked value)")
     args = parser.parse_args()
 
-    load_dotenv()  # reads GEMINI_API_KEY from a local .env file
+    load_dotenv(PROJECT_ROOT / ".env")  # reads GEMINI_API_KEY from the project's .env file
     if not os.environ.get("GEMINI_API_KEY"):
         raise SystemExit("No GEMINI_API_KEY found. Copy .env.example to .env and add your key.")
 
@@ -132,7 +139,11 @@ def main():
                 client,
                 model=CHAT_MODEL,
                 contents=f"Context:\n{build_context(chunks, result.hits)}\n\nQuestion: {question}",
-                config=types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT, temperature=0),
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_PROMPT, temperature=0,
+                    # we don't give Gemini any tools, so switch off tool calling
+                    automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
+                ),
             )
         except genai_errors.APIError as err:
             print(f"\n[Gemini request failed: {err}]\n")

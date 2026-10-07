@@ -200,7 +200,7 @@
     "question": "How is lisinopril dosed after an acute heart attack?",
     "answerable": true,
     "source_file": "zestril_lisinopril.pdf",
-    "answer": "5 mg within 24 hours of MI, 5 mg after 24 hours, then 10 mg once daily.",
+    "answer": "5 mg within 24 hours, 5 mg after 24 hours, 10 mg after 48 hours, then 10 mg once daily.",
     "evidence": [
       "Give 5 mg within 24 hours of MI",
       "Zestril 5 mg orally, followed by 5 mg after 24 hours, 10 mg after 48 hours"
@@ -332,7 +332,7 @@
     "source_file": "jantoven_warfarin.pdf",
     "answer": "Co-enzyme Q10, St. John's wort, ginseng.",
     "evidence": [
-      "some botanicals may decrease the effects of JANTOVEN"
+      "some botanicals may decrease the effects of JANTOVEN (e.g., co-enzyme Q , St. John's wort, ginseng)"
     ]
   },
   {
@@ -481,8 +481,7 @@
     "source_file": "amoxicillin_capsule_SCANNED.pdf",
     "answer": "Drug-induced enterocolitis syndrome (DIES) has been reported; discontinue if it occurs.",
     "evidence": [
-      "Drug-induced enterocolitis syndrome (DIES) has been reported with amoxicillin use",
-      "Warnings and Precautions, Drug-Induced Enterocolitis Syndrome (DIES)"
+      "Drug-induced enterocolitis syndrome (DIES) has been reported with amoxicillin use"
     ]
   },
   {
@@ -513,8 +512,7 @@
     "source_file": "amoxicillin_capsule_SCANNED.pdf",
     "answer": "20 to 45 mg/kg/day in divided doses every 8 to 12 hours.",
     "evidence": [
-      "In Pediatric Patients over 3 Months of Age, 20 to 45 mg/kg/day",
-      "Recommended Dosage for Pediatric Patients Aged 3 Months and Older and Weight Less than 40 kg"
+      "In Pediatric Patients over 3 Months of Age, 20 to 45 mg/kg/day"
     ]
   },
   {

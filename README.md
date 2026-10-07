@@ -1,106 +1,160 @@
 # Document Intelligence Chatbot
 
-A local Retrieval-Augmented Generation (RAG) chatbot that turns a folder of
-PDFs into a searchable, source-grounded Q&A system — built from the ground
-up (no framework doing the heavy lifting) to understand and demonstrate
-every layer of a real GenAI pipeline.
+## 1. What it does
 
-## What it does
+A local Retrieval-Augmented Generation (RAG) chatbot for PDFs. It parses PDFs (OCR fallback for scanned pages, with page and bounding-box positions kept on every chunk), retrieves relevant chunks with hybrid keyword + embedding search, and has Google Gemini answer from those chunks only, citing file, page and position. It abstains with "I don't have enough information" when retrieval confidence is low.
 
-Point it at a folder of PDFs. It will:
+The project also includes an evaluation harness. It uses 60 hand-labelled questions over public FDA drug labels to measure retrieval quality and abstention. Retrieval choices and the abstention threshold are picked from those numbers rather than guessed.
 
-1. **Parse** them — direct text extraction for digital PDFs, automatic OCR
-   fallback (Tesseract) for scanned/image pages, preserving on-page
-   position metadata
-2. **Chunk** the extracted text into overlapping segments, sized to keep
-   each chunk semantically focused
-3. **Embed** each chunk into a vector locally (HuggingFace
-   `sentence-transformers`, no cloud call needed for this step)
-4. **Index** those vectors in FAISS for fast similarity search
-5. On a question: **retrieve** the most relevant chunks, then **generate**
-   a grounded answer (Google Gemini) — or explicitly say "I don't have
-   enough information" when the retrieved context doesn't support a
-   confident answer
+**Headline result** (48 answerable + 12 unanswerable questions; details in [Results](#results)): switching from the original MiniLM dense search to hybrid BM25 + `bge-small` retrieval raised MRR@10 from **0.60 to 0.83** (+0.24, 95% CI +0.12 to +0.36). The rate of putting the right chunk first (Hit@1) went from **0.46 to 0.75**.
 
-## Notable engineering decisions
+## 2. Tools and libraries (and why)
 
-- **Confidence-aware retrieval** — every answer carries a similarity
-  score; below a tunable threshold, the system flags its own answer as
-  low-confidence instead of presenting it as fact.
-- **Anti-hallucination prompting** — the LLM is instructed to answer only
-  from the provided context and to say so plainly when it can't. Verified
-  empirically: asking about something demonstrably absent from the source
-  PDFs correctly returns "I don't have enough information," not a
-  plausible-sounding guess.
-- **Resilience to upstream failures** — automatic retry with backoff on
-  transient API server errors, instead of crashing on the first hiccup.
-- **Layout-aware parsing with OCR fallback** — chunks retain page and
-  bounding-box metadata; scanned pages are detected automatically and
-  routed through OCR without manual intervention.
+| Tool | Why |
+|---|---|
+| **PyMuPDF** | Fast text extraction *with* block coordinates, and renders pages to images for OCR, so no separate poppler install is needed. |
+| **Tesseract** (`pytesseract`) | Free, local OCR for scanned/image-only pages; returns word positions too. |
+| **sentence-transformers** | Runs HuggingFace embedding and cross-encoder models locally (Apple Silicon GPU via `mps`). |
+| **BAAI/bge-small-en-v1.5** | Default embedding model: beat the original `all-MiniLM-L6-v2` and the larger `bge-base` in the eval, and reads 512 tokens (MiniLM truncates at 256, which cut off part of 46% of our chunks). |
+| **rank-bm25** | Keyword search. Catches exact terms like drug names, doses and section titles that embeddings blur. |
+| **FAISS** | Fast vector similarity search; `IndexFlatIP` on normalized vectors = exact cosine search. |
+| **Google Gemini** (`google-genai`, `gemini-3.8-flash`) | Generates the final answer; has a free tier. Pinned version for reproducibility. |
+| **rapidfuzz** | Fuzzy matching of evidence quotes to chunks, tolerant of OCR typos. |
+| **pytest + GitHub Actions** | Unit tests, label-integrity tests, and a retrieval regression test on every push. |
+| **matplotlib** | Precision-recall curve for picking the abstention threshold. |
 
-## Architecture
+## 3. File structure
 
 ```
-PDFs
-  -> Parse       (PyMuPDF, + Tesseract OCR fallback for scanned pages)
-  -> Chunk       (overlapping ~120-word windows)
-  -> Embed       (sentence-transformers: all-MiniLM-L6-v2)
-  -> Index       (FAISS, cosine similarity)
-  -> Retrieve    (top-k relevant chunks for a question)
-  -> Generate    (Google Gemini, grounded + confidence-scored)
+src/docintel/
+  __init__.py        package marker
+  config.py          data paths, chunk sizes, default model, picks mps/cuda/cpu
+  ingest.py          Step 1: PDF -> text blocks with page + bounding box (OCR fallback)
+  chunking.py        Step 2: blocks -> ~120-word overlapping chunks that keep their regions
+  build_index.py     Step 3: embed chunks, save FAISS index + model name (manifest)
+  retrieval.py       dense / BM25 / hybrid (RRF) / rerank retrievers + named configs
+  pipeline.py        runs steps 1-3 in one command
+  search.py          retrieval-only demo (no LLM) for inspecting rankings
+  chat.py            the chatbot: retrieve -> abstain or ask Gemini -> cite sources
+  evaluation.py      metrics: evidence matching, Hit@k, MRR, PR curve, CV, bootstrap CIs
+eval/
+  corpus/            5 DailyMed drug-label PDFs + 1 simulated scanned PDF (the eval corpus)
+  source_pdfs/       the original label used to make the simulated scan
+  download_corpus.py DailyMed set IDs/versions of every corpus PDF; re-downloads them
+  make_scanned_pdf.py turns 4 label pages into an image-only "scan" (skew, blur, noise)
+  questions.json     60 questions: answer, source file and evidence quotes (12 unanswerable)
+  run_eval.py        runs every retrieval config, writes eval/results/
+  results/results.md   comparison table (below)
+  results/results.json all metrics, thresholds, PR curves, per-question ranks
+  results/pr_curves.png abstention precision-recall curves
+  results/labels_review.md every label + where its evidence was found, for human review
+tests/
+  conftest.py        shared fixture: parsed + chunked eval corpus
+  test_ingest.py     digital parsing, real OCR on an image-only PDF, bbox units, line grouping
+  test_chunking.py   chunk size, overlap, page ranges, regions, edge cases
+  test_retrieval.py  BM25, dense, RRF, hybrid, rerank, save/load, model-mismatch guard
+  test_evaluation.py metrics, threshold picking, CV, bootstrap
+  test_eval_labels.py every label's evidence exists in the parsed corpus (incl. OCR'd PDF)
+  test_retrieval_regression.py (slow) baseline + hybrid must stay above metric floors
+.github/workflows/ci.yml  installs Tesseract + CPU PyTorch, runs fast then slow tests
+pyproject.toml     makes src/docintel installable (`pip install -e .`) + pytest config
+requirements.txt   pinned package versions
+.env.example       template for GEMINI_API_KEY (placeholder only)
+data/              your own PDFs and generated files (not tracked in git)
 ```
 
-## Tech stack
+## 4. Setup
 
-Python · PyMuPDF · Tesseract OCR · sentence-transformers · FAISS ·
-Google Gemini API
-
-## Project structure
-
-```
-src/
-  ingest/    PDF parsing (parse_pdf.py)
-  embed/     Chunking + embeddings + FAISS index
-  retrieve/  RAG chat: retrieval + grounded generation (rag_chat.py)
-data/
-  raw_pdfs/    input PDFs        (add your own - not tracked in git)
-  processed/   parsed blocks     (generated)
-  chunks/      chunked text      (generated)
-  index/       FAISS index       (generated)
-```
-
-## Setup
-
-```
-python3 -m venv venv
-source venv/bin/activate
+```bash
+brew install tesseract                      # OCR engine (macOS)
+conda create -n doc-intelligence-chatbot python=3.11 -y
+conda activate doc-intelligence-chatbot
 pip install -r requirements.txt
-brew install tesseract poppler      # macOS OCR/PDF system dependencies
-cp .env.example .env                # then add your GEMINI_API_KEY
+pip install -e .                            # makes `import docintel` work
+cp .env.example .env                        # then put your Gemini API key in .env
 ```
 
-## Run the pipeline
+## 5. How to run
 
-```
-python src/ingest/parse_pdf.py          # 1. parse PDFs in data/raw_pdfs/
-python src/embed/chunk_documents.py     # 2. chunk the parsed text
-python src/embed/build_index.py         # 3. embed + build FAISS index
-python src/retrieve/rag_chat.py         # 4. ask questions
-```
+Chat with your own PDFs:
 
-## Example interaction
-
-```
-You: what's the weight of the final project
-
-Bot: Based on the provided context, the Final Project accounts for 40%
-of the grade (aligned with learning objectives LO3-9). Students work in
-groups of 3-4 and submit multiple deliverables throughout the semester.
-Source: CS6983_Syllabus_Fall2026.pdf, p.2
+```bash
+cp ~/Downloads/*.pdf data/raw_pdfs/         # any PDFs you want to ask about
+python -m docintel.pipeline                 # parse -> chunk -> embed + index
+python -m docintel.chat                     # ask questions; 'quit' to exit
+python -m docintel.search                   # (optional) see raw rankings, no LLM
 ```
 
-## Note on the data folder
+Reproduce the evaluation (no API key needed; downloads ~1.8 GB of models on first run, mostly the reranker):
 
-`data/raw_pdfs/` is empty in this repo — the original development and
-testing set used personal documents that aren't included here for
-privacy. Add your own PDFs to `data/raw_pdfs/` to try it out.
+```bash
+python eval/run_eval.py                     # all 7 configs, a few minutes on an M4 Pro
+python eval/run_eval.py --configs baseline-minilm hybrid-bge-small
+```
+
+Tests:
+
+```bash
+pytest                                      # 27 fast tests (~1 s once the corpus is cached)
+pytest -m slow                              # retrieval regression test (downloads models)
+```
+
+## Results
+
+Corpus: 5 FDA drug labels from DailyMed (Lipitor, Zoloft, Zestril, Jantoven/warfarin, metformin; 215 pages) plus a simulated 4-page scan of an amoxicillin label, giving 553 chunks. Questions: 48 answerable (8 per document) and 12 unanswerable (3 off-topic or about a drug not in the corpus, 2 near-misses about drugs that only appear as interaction mentions, 7 about information the labels don't contain, like prices or veterinary use).
+
+| Config | Hit@1 | Hit@4 | Hit@10 | MRR@10 [95% CI] | ΔMRR vs baseline [95% CI] | Abstain F1 (in-sample / 5-fold CV) | AUC | Answered w/ evidence | ms/query |
+|---|---|---|---|---|---|---|---|---|---|
+| baseline-minilm | 0.46 | 0.83 | 0.88 | 0.60 [0.48, 0.70] | — | 0.61 / 0.50 | 0.82 | 0.69 | 5 |
+| bm25 | 0.60 | 0.85 | 0.96 | 0.73 [0.62, 0.82] | +0.13 [-0.00, +0.27] | 0.76 / 0.70 | 0.85 | 0.83 | 0 |
+| dense-bge-small | 0.56 | 0.90 | 1.00 | 0.71 [0.61, 0.81] | +0.11 [+0.03, +0.21] | 0.70 / 0.50 | 0.91 | 0.88 | 7 |
+| dense-bge-base | 0.52 | 0.83 | 0.98 | 0.68 [0.58, 0.77] | +0.08 [-0.01, +0.18] | 0.69 / 0.62 | 0.90 | 0.75 | 9 |
+| **hybrid-bge-small** (default) | **0.75** | **0.92** | 0.98 | **0.83** [0.74, 0.91] | **+0.24** [+0.12, +0.36] | 0.70 / 0.50 | 0.91 | **0.90** | 7 |
+| hybrid-bge-small+rerank | 0.65 | 0.85 | 0.94 | 0.76 [0.65, 0.85] | +0.16 [+0.05, +0.28] | 0.58 / 0.48 | 0.78 | 0.75 | 649 |
+| hybrid-bge-base+rerank | 0.65 | 0.92 | 0.94 | 0.76 [0.66, 0.85] | +0.17 [+0.05, +0.29] | 0.56 / 0.45 | 0.73 | 0.79 | 645 |
+
+*Hit@4* = the right chunk is among the 4 sent to the LLM. *Answered w/ evidence* = an answerable question passes the abstention threshold **and** has its evidence in those 4 chunks. *AUC* = how well the confidence score separates answerable from unanswerable questions (1.0 = perfectly). Timings are on an M4 Pro with the `mps` GPU.
+
+What the numbers say:
+
+- **Hybrid search is the clear win.** Fusing BM25 with `bge-small` beats `bge-small` alone by +0.12 MRR (CI +0.02 to +0.22), so keyword matching adds real value on drug-label text full of exact terms.
+- **The cross-encoder reranker did not help here.** Compared with hybrid it changed MRR by −0.08 (CI −0.18 to +0.02, so not clearly worse, but no gain) at ~90× the latency. It also gave near-miss unanswerable questions very high scores: "omeprazole dose for heartburn" scored 0.99 because omeprazole is mentioned. So it is not the default.
+- **The bigger embedding model wasn't better.** `bge-base` scored no higher than `bge-small` on this set.
+- **OCR works for retrieval.** On the 8 questions about the scanned PDF, hybrid gets the right chunk first for 6 and in the top 4 for 7.
+- **Abstention from retrieval scores alone is weak.** The chosen threshold (0.702) abstains on 7 of 12 unanswerable questions with 87.5% precision while still answering 47 of 48 answerable ones. However, the cross-validated F1 is only 0.50, so the threshold is fragile. The LLM prompt is the second line of defense: in a manual test, a near-miss question that passed the threshold still got "I don't have enough information" from Gemini.
+
+![Abstention precision-recall curves](eval/results/pr_curves.png)
+
+### Limitations (read before quoting numbers)
+
+- **Small eval set.** 48 answerable questions, so one question moves Hit@1 by ~2 points. The 95% confidence intervals above are the honest error bars; differences inside them are noise.
+- **Labels by one annotator, pooled at depth 1.** Questions and evidence quotes were written from the label text. They were then widened by judging each config's top-ranked chunk: 33 alternate quotes were added where a chunk answered in different words. Relevant chunks deeper in the rankings may still be unlabelled, so Hit@4/Hit@10 are lower bounds. Every label is listed in [`eval/results/labels_review.md`](eval/results/labels_review.md).
+- **The scan is simulated.** It's a degraded rendering of a real label, because the FDA archive blocks scripted downloads of real scans.
+- **Threshold is corpus-specific.** It was tuned on drug labels with `bge-small`. On other documents, re-run the eval or pass `--threshold`.
+- **Layout is kept, not yet used for ranking.** Bounding boxes are stored and shown in citations, but chunking is word-window based. On two-column pages, PyMuPDF sometimes returns bullet glyphs as separate blocks, out of reading order.
+- **Answer quality is not scored yet.** The eval measures retrieval and abstention, not whether Gemini's final wording is correct.
+
+## 6. How it was built
+
+1. **Original prototype.** Four scripts (parse → chunk → MiniLM + FAISS → Gemini) tested on a few personal PDFs, with no tests or measurements.
+2. **Review.** A review found that bounding boxes were dropped at chunking, OCR boxes were in pixels while digital boxes were in points, there were no tests, and nothing measured accuracy.
+3. **Restructure.** Turned the scripts into the installable `docintel` package and added a conda env, pinned requirements, pytest and GitHub Actions CI. Also fixed the bbox problems, saved the model name with the index, added real exponential backoff (429/5xx), and made citations come from retrieval rather than the LLM's text.
+4. **Eval corpus.** Downloaded 5 DailyMed labels, made a simulated scan of a 6th, wrote 60 questions with evidence quotes, and added a test that every quote exists in the parsed corpus.
+5. **Eval harness.** Added Hit@k, MRR, bootstrap CIs, a paired comparison against the baseline, and an abstention precision-recall curve with a cross-validated F1.
+6. **Label audit.** Pooled the top result from every config, judged each one by hand, and added alternate wordings. Before this, every config's score was badly undercounted (e.g. baseline Hit@1 0.23 → 0.46).
+7. **Retrieval experiments.** Compared BM25, `bge-small`, `bge-base`, hybrid RRF and cross-encoder reranking, kept the best (hybrid `bge-small`), and set the abstention threshold from the PR curve.
+8. **End-to-end check.** Ran the chatbot on the public corpus against the real Gemini API.
+
+## 7. Key concepts (interview-ready)
+
+- **RAG**: retrieve relevant text first, then make the LLM answer from it. This grounds answers in your documents and makes them checkable.
+- **Chunking & overlap**: chunks must be small enough to be about one thing, but each embedding model has a max input length. MiniLM silently truncates at 256 tokens, and 46% of these chunks were longer.
+- **Dense vs. sparse retrieval**: embeddings match meaning ("blood thinner" ≈ "anticoagulant"); BM25 matches exact words (drug names, "2,550 mg"). Each fails where the other succeeds.
+- **Reciprocal Rank Fusion**: merge ranked lists by `sum 1/(60 + rank)`. Uses only ranks, so you never compare a cosine score to a BM25 score.
+- **Bi-encoder vs. cross-encoder**: a bi-encoder embeds query and document separately (fast, used for search). A cross-encoder reads the pair together (slower, often more precise). "Often" isn't "always": measure it, as this eval shows.
+- **Hit@k and MRR**: Hit@k is whether the right chunk is in the top k. MRR is the average of 1/rank of the first right chunk, which rewards putting it first.
+- **Abstention as classification**: "should I refuse?" is a binary decision. Sweep the threshold, plot precision vs. recall, pick a point, and cross-validate it, because picking and scoring on the same data is optimistic.
+- **Confidence intervals & paired tests**: with 48 questions, bootstrap the per-question scores. Compare systems on the *same* questions (paired) before claiming one is better.
+- **Evaluation pooling**: labels written up front miss alternate correct passages. Judging the pooled top results of all systems (as TREC does) fixes this without favoring any single system.
+- **OCR coordinate systems**: images are in pixels at some DPI, PDFs are in points (1/72 inch), so convert with `points = pixels × 72 / dpi`.
+- **Reproducibility**: pin package and model versions, commit the eval corpus, and record which model built an index.

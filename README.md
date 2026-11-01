@@ -136,6 +136,7 @@ tests/
   test_retrieval_regression.py Metric floors for baseline and hybrid (slow)
 .github/workflows/ci.yml
 pyproject.toml       Package and pytest configuration
+LICENSE              MIT license
 requirements.txt     Pinned dependencies
 .env.example         GEMINI_API_KEY placeholder
 data/                User PDFs and generated files (not tracked)
@@ -161,3 +162,9 @@ data/                User PDFs and generated files (not tracked)
 - **Corpus-specific threshold.** Tuned on drug labels with `bge-small`.
 - **Layout is stored but not used for ranking.** Bounding boxes appear in citations, but chunking uses word windows. On two-column pages, PyMuPDF sometimes returns bullet glyphs as separate blocks out of reading order.
 - **Answer quality is not scored.** The evaluation measures retrieval and abstention, not the correctness of Gemini's final wording.
+
+## License
+
+Code is released under the MIT License; see [LICENSE](LICENSE).
+
+The drug-label PDFs in `eval/corpus/` and `eval/source_pdfs/` are FDA labels from DailyMed (US government works, public domain).

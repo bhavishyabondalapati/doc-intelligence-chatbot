@@ -1,7 +1,7 @@
 # PDF parsing + OCR
 pymupdf==1.28.2
 pytesseract==0.3.13
-pillow==12.3.0
+pillow==13.0.0
 
 # Embeddings, reranking, vector + keyword search
 torch==2.14.1
@@ -19,3 +19,8 @@ python-dotenv==1.2.4
 rapidfuzz==3.14.6
 matplotlib==3.11.2
 pytest==9.1.1
+
+# Security floors for transitive dependencies (known vulnerabilities below these versions)
+certifi>=2026.10.18
+pyasn1>=0.6.5
+filelock>=4.2.1
